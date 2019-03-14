@@ -1,0 +1,88 @@
+body {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+}
+
+h3 {
+    /* margin-top: 2rem; */
+}
+
+#h3-1 {
+    margin-top: 2rem;
+}
+
+.row {
+    /* margin-bottom: 1rem; */
+}
+
+.row-p1 {
+    margin-bottom: -3rem;
+}
+
+.row-p2 {
+    margin-bottom: 2rem;
+}
+
+.row .row {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+[class*="col-"] {
+    /* padding-top: 1rem; */
+    /* padding-bottom: 1rem; */
+    /* background-color: rgba(86, 61, 124, .15); */
+    /* border: 1px solid rgba(86, 61, 124, .2); */
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#cswan {
+    padding-left: 10px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: normal;
+    color: #000000;
+}
+
+#work {
+
+    padding-left: 7px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: normal;
+    color: #000000;
+}
+
+.projects {
+    font-family: Lekton;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: normal;
+    /* text-align: center; */
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+p {
+    font-family: Zilla Slab;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: normal;
+}
