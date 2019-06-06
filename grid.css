@@ -30,24 +30,17 @@ h3 {
     margin-bottom: 0;
 }
 
-[class*="col-"] {
-    /* padding-top: 1rem; */
-    /* padding-bottom: 1rem; */
-    /* background-color: rgba(86, 61, 124, .15); */
-    /* border: 1px solid rgba(86, 61, 124, .2); */
-}
-
-hr {
+/* hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
-}
+} */
 
 #cswan {
     padding-left: 10px;
-    font-family: Lato;
+    font-family: futura-pt, sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
+    font-weight: 500;
+    font-size: 46px;
     line-height: normal;
     color: #000000;
 }
@@ -55,19 +48,73 @@ hr {
 #work {
 
     padding-left: 7px;
-    font-family: Lato;
+    font-family: futura-pt, sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
+    font-weight: heavy;
+    font-size: 32px;
     line-height: normal;
     color: #000000;
 }
 
-.projects {
-    font-family: Lekton;
+strong {
+    font-family: futura-pt, sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: normal;
+    /* text-align: center; */
+}
+
+.projects {
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 300;
     font-size: 36px;
+    line-height: normal;
+    /* text-align: center; */
+}
+
+.role {
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    /* text-align: center; */
+}
+
+.section_header {
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+    font-weight: 400;
+    font-size: 18px;
+    line-height: normal;
+    /* text-align: center; */
+}
+
+.sections {
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    /* padding-bottom: 10px; */
+    font-size: 16px;
+    line-height: normal;
+    /* text-align: center; */
+}
+
+.section_numbers {
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 200;
+    font-size: 14px;
     line-height: normal;
     /* text-align: center; */
 }
@@ -76,13 +123,19 @@ hr {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 90%;
 }
 
 p {
-    font-family: Zilla Slab;
+    font-family: futura-pt, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: normal;
+    /* text-align: center; */
+}
+
+img {
+    max-width: 50%;
+    height: auto;
 }
