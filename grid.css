@@ -9,12 +9,24 @@ h3 {
     /* margin-top: 2rem; */
 }
 
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
+    text-align: left;
+}
+
 #h3-1 {
     margin-top: 2rem;
 }
 
 .row {
     /* margin-bottom: 1rem; */
+}
+
+.eight {
+    width: 620px;
 }
 
 .row-p1 {
@@ -46,14 +58,21 @@ h3 {
 }
 
 #work {
-
     padding-left: 7px;
     font-family: futura-pt, sans-serif;
     font-style: normal;
-    font-weight: heavy;
+    font-weight: 400;
     font-size: 28px;
     line-height: normal;
     color: #000000;
+}
+
+.info {
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: normal;
 }
 
 strong {
@@ -74,6 +93,15 @@ strong {
     /* text-align: center; */
 }
 
+.projects-sub {
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: normal;
+    /* text-align: center; */
+}
+
 .role {
     font-family: futura-pt, sans-serif;
     font-style: normal;
@@ -81,7 +109,7 @@ strong {
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     line-height: normal;
     /* text-align: center; */
 }
@@ -138,4 +166,30 @@ p {
 img {
     max-width: 50%;
     height: auto;
+}
+
+.affect-map {
+    max-width: 80%;
+    height: auto;
+
+}
+
+.thumb {
+    width: 100px;
+    /* Set a small width */
+}
+
+.step {
+    margin: 32px 0;
+}
+
+.step-body {
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 32px;
+    font-family: Nunito, helvetica, arial, sans-serif;
+    font-weight: 300;
+    text-align: left;
+    color: #555;
+    word-wrap: break-word;
 }

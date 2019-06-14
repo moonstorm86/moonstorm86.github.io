@@ -3,7 +3,8 @@
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <!-- <meta charset="utf-8"> -->
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
@@ -24,6 +25,7 @@
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-light bg-light">
         <a id="cswan" class="navbar-brand" href="index.html">Chris Swan</a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01"
             aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,21 +33,20 @@
 
         <div class="collapse navbar-collapse" id="navbarsExample01">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">home<span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./assets/pdf/Swan_June2019_UXR.pdf">resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">contact</a>
+                    <a class="nav-link" href="./contact.html"><em>information</em> </a>
                 </li>
             </ul>
         </div>
     </nav>
 
+
     <!-- Start Container -->
-    <div class="container" style="padding-top: 25px">
+    <div class="container">
+
 
         <!-- Work Heading-->
         <div>
@@ -62,7 +63,9 @@
         <div>
             <div>
                 <h2 class="projects" style="border-bottom: 2px black solid; padding-top: 50px;">mindfield</h2>
-                <!-- <hr style="border-top: 1px black solid"> -->
+                <h2 class="projects-sub"><em> Exploring and developing interaction prototypes with our most precious
+                        biodata.</em>
+                </h2>
             </div>
             <div class="row-p1">
                 <div class="col-12 col-md-8">
@@ -79,9 +82,9 @@
                     <div>
                         <p> The mindfield product series explores concepts related to neurofeedback or brainwave
                             biofeedback.
-                            Neurofeedback creates a subconscious reward system that teaches the brain to function in a
-                            more
-                            optimal range.
+                            Neurofeedback creates a subconscious reward system that teaches the brain to function in
+                            an
+                            <em> optimal </em> range.
                         </p>
 
                         <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href="./mindfield.html">Read
@@ -102,8 +105,9 @@
         <div>
             <div>
                 <!-- <hr style="border-top: 2px black solid"> -->
-                <h2 class="projects" style="border-bottom: 2px black solid">voice interfaces</h2>
-                <!-- <hr style="border-top: 1px black solid"> -->
+                <h2 class="projects" style="border-bottom: 2px black solid">artificial artifacts</h2>
+                <h2 class="projects-sub"><em> Exploring research techniques.</em>
+                </h2>
             </div>
             <div class="row-p2">
                 <div class="col-12 col-md-8">
@@ -120,18 +124,13 @@
                         <p>I explored classic research methods like in home interviews and secondary research to
                             understand
                             the
-                            practices, barriers, and attitudes of voice interface users. In an effort to increase the
+                            practices, barriers, and attitudes of voice interface users. In an effort to increase
+                            the
                             validity
-                            of my findings from the interviews, I built a simple web scraper with Python to gather more
+                            of my findings from the interviews, I built a simple web scraper with Python to gather
+                            more
                             data
-                            from Reddit and did a sentiment cluster analysis.
-
-                            <br>
-                            <br>
-                            I also explored how to build skills using Amazon Alexa and how to build Alexa into a
-                            Raspberry
-                            Pi
-                            and that it is very difficult to use.
+                            from Reddit and did a cluster analysis of feature requests.
 
                         </p>
                         <div class="col-6 col-md-4" style="padding-left: 0px"><strong>
@@ -153,7 +152,11 @@
         <div>
             <div>
 
-                <h2 class="projects" style="border-bottom: 2px black solid">sokoman</h2>
+                <h2 class="projects" style="border-bottom: 2px black solid">sokoman
+                </h2>
+                <h2 class="projects-sub"> <em> Learning to build JavaScript appplications from scratch with the classic
+                        puzzle
+                        game Sokoban.</em></h2>
 
             </div>
             <div class="row-p2">
@@ -168,8 +171,10 @@
             <div class="row" style="padding-bottom: 0px;">
                 <div class="col-12 col-md-8">
                     <div>
-                        <p>This is my take on the classic game Sokoban. I used it as a vehicle to apply learning how to
-                            write a program with JavaScript and push it to a web interface.
+                        <p>Works only on desktop (for now). Users may quickly learn that as the difficulty of the
+                            game
+                            increases, you can create unsolvable positions. This is the main obstacle in solving
+                            problems in Sokoban or otherwise.
                         </p>
                         <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href="/sokoman/">Play!</a>
                             </strong></div>
@@ -190,7 +195,7 @@
         <br>
 
         <!-- Transparadox -->
-        <div>
+        <!-- <div>
             <div>
                 <h2 class="projects" style="border-bottom: 2px black solid">transparadox</h2>
             </div>
@@ -221,20 +226,21 @@
         </div>
         <br>
         <br>
-        <br>
+        <br> -->
 
         <!-- Wake App -->
         <div>
             <div>
                 <!-- <hr style="border-top: 2px black solid"> -->
                 <h2 class="projects" style="border-bottom: 2px black solid">wake app</h2>
-                <!-- <hr style="border-top: 1px black solid"> -->
+                <h2 class="projects-sub"><em>A neurological spam filter.</em> </h2>
             </div>
             <div class="row-p2">
                 <div class="col-12 col-md-8">
                     <div>
                         <a href="">
-                            <img src="" class="img-fluid" height:auto max-width: 80%; style="padding-top: 25px" alt="">
+                            <img src="./assets/img/wake app-100.jpg" class="img-fluid" height:auto max-width: 80%;
+                                style="padding-top: 25px" alt="">
                         </a>
                     </div>
                 </div>
@@ -246,7 +252,7 @@
                         <p>In a world where information moves at the speed of light we need a subconscious filter to
                             block the noise. Wake is a behavioral scientist's research tool and a speculative
                             application
-                            that uses brain data to block intrusive platforms. A neurological spam filter.
+                            that uses brain data to block intrusive platforms.
                         </p>
                         <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href="./wake.html">Read
                                     more</a>
@@ -267,13 +273,14 @@
             <div>
                 <!-- <hr style="border-top: 2px black solid"> -->
                 <h2 class="projects" style="border-bottom: 2px black solid">meta app</h2>
-                <!-- <hr style="border-top: 1px black solid"> -->
+                <h2 class="projects-sub">Exploring smart sensors in medical technology and 3D form.</h2>
             </div>
             <div class="row-p2">
                 <div class="col-12 col-md-8">
                     <div>
                         <a href="">
-                            <img src="" class="img-fluid" height:auto max-width: 80%; style="padding-top: 25px" alt="">
+                            <img src="./assets/img/meta.jpg" class="img-fluid" height:auto max-width: 80%;
+                                style="padding-top: 25px" alt="">
                         </a>
                     </div>
                 </div>
@@ -299,12 +306,50 @@
         <br>
         <br>
 
+        <!-- Kalpa Light-->
+        <div>
+            <div>
+                <!-- <hr style="border-top: 2px black solid"> -->
+                <h2 class="projects" style="border-bottom: 2px black solid">kalpa</h2>
+                <!-- <hr style="border-top: 1px black solid"> -->
+            </div>
+            <div class="row-p2">
+                <div class="col-12 col-md-8">
+                    <div>
+                        <a href="kalpa.html">
+                            <img src="./assets/img/lightFinal.jpg" class="img-fluid" height:auto max-width: 80%;
+                                style="padding-top: 25px" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="padding-bottom: 0px;">
+                <div class="col-12 col-md-8">
+                    <div>
+                        <p>Light series.
+                        </p>
+                        <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href="./kalpa.html">Read
+                                    more</a>
+                            </strong></div>
+                        <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href=""></a>
+                            </strong></div>
+                        <div style="border-bottom: 1px black solid; padding-bottom: 10px"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
         <!-- Chef's Essentials-->
         <div>
             <div>
                 <!-- <hr style="border-top: 2px black solid"> -->
                 <h2 class="projects" style="border-bottom: 2px black solid">cook kit</h2>
-                <!-- <hr style="border-top: 1px black solid"> -->
+                <h2 class="projects-sub"><em>Making toolboxes with stainless steel.</em> </h2>
+
             </div>
             <div class="row-p2">
                 <div class="col-12 col-md-8">
@@ -322,42 +367,6 @@
                         <p>A home cook's essentials toolbox.
                         </p>
                         <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href="./cookkit.html">Read
-                                    more</a>
-                            </strong></div>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href=""></a>
-                            </strong></div>
-                        <div style="border-bottom: 1px black solid; padding-bottom: 10px"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-
-        <!-- Kalpa Light-->
-        <div>
-            <div>
-                <!-- <hr style="border-top: 2px black solid"> -->
-                <h2 class="projects" style="border-bottom: 2px black solid">kalpa</h2>
-                <!-- <hr style="border-top: 1px black solid"> -->
-            </div>
-            <div class="row-p2">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <a href="kalpa.html">
-                            <img src="" class="img-fluid" height:auto max-width: 80%; style="padding-top: 25px" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" style="padding-bottom: 0px;">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <p>Light series.
-                        </p>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href="./kalpa.html">Read
                                     more</a>
                             </strong></div>
                         <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href=""></a>
@@ -467,7 +476,8 @@
                         <p>Description
 
                         </p>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href="echo.html">Read More</a>
+                        <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href="echo.html">Read
+                                    More</a>
                             </strong></div>
                         <div class="col-6 col-md-4" style="padding-left: 0px">
                             <a href="https://github.com/moonstorm86/MuseOSCEsp8266"><strong></strong></a>
