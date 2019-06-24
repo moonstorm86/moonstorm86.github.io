@@ -93,6 +93,9 @@ pre {
     font-weight: 300;
     font-size: 24px;
     line-height: normal;
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+    padding-top: 50px;
 }
 
 strong {
@@ -243,3 +246,16 @@ ul {
     word-wrap: break-word;
 }
 
+div.container4 {
+    height: 10em;
+    position: relative
+}
+
+div.container4 p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
