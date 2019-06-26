@@ -93,8 +93,7 @@ pre {
     font-weight: 300;
     font-size: 24px;
     line-height: normal;
-    padding-left: 1.5rem;
-    padding-right: 2rem;
+    padding-left: 1.7rem;
     padding-top: 50px;
 }
 
@@ -210,10 +209,13 @@ ul {
     height: auto;
 }
 
-/* iframe {
-    max-width: 80%;
-
-} */
+.fake {
+    padding-top: 70px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    max-width: 90%;
+    height: auto;
+}
 
 .affect-map {
     max-width: 80%;
@@ -258,4 +260,13 @@ div.container4 p {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
+}
+
+.about {
+    max-width: 500px;
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: normal;
 }
