@@ -2,22 +2,22 @@ body {
     height: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: whitesmoke;
     /* padding-left: 1.5rem; */
     /* padding-right: 2rem; */
 }
 
+
 /* The hero image */
+
 .hero-image {
     /* Set a specific height */
     position: relative;
-    height: 600px;
-    background-image: url("./assets/img/Frame.jpg");
+    height: 800px;
+    background-image: url("./assets/img/herofog.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: whitesmoke;
     background-size: cover;
-
 }
 
 .container {
@@ -62,6 +62,7 @@ pre {
     margin-top: 1rem;
     margin-bottom: 0;
 }
+
 
 /* hr {
     margin-top: 1rem;
@@ -194,6 +195,7 @@ ul {
     line-height: normal;
 }
 
+
 /* img {
     max-width: 50%;
     height: auto;
@@ -221,7 +223,6 @@ ul {
 .affect-map {
     max-width: 80%;
     height: auto;
-
 }
 
 .thumb {
