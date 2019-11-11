@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "Carolina Mountains";
+    src: url("../assets/fonts/carolina_mountains_personal_use-webfont.eot");
+    src: url("../assets/fonts/carolina_mountains_personal_use-webfont.woff") format("woff"), /*url("./fonts/Harabara.otf") format("opentype"),*/
+    url("../assets/fonts/carolina_mountains_personal_use-webfont.svg") format("svg");
+}
+
+
+/* Circular Font*/
+
+@font-face {
+    font-family: 'Circular Std Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Book'), url('../assets/fonts/CircularStd-Book.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Circular Std Book Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Book Italic'), url('../assets/fonts/CircularStd-BookItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Circular Std Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Medium'), url('../assets/fonts/CircularStd-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Circular Std Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Medium Italic'), url('../assets/fonts/CircularStd-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Circular Std Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Bold'), url('../assets/fonts/CircularStd-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Circular Std Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Bold Italic'), url('../assets/fonts/CircularStd-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Circular Std Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Black'), url('../assets/fonts/CircularStd-Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Circular Std Black Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Black Italic'), url('../assets/fonts/CircularStd-BlackItalic.woff') format('woff');
+}
+
+
+/************/
+
+@font-face {
+    font-family: 'Fakt Air';
+    src: url('../assets/fonts/FaktPro-Air.eot');
+    src: url('../assets/fonts/FaktPro-Air.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/FaktPro-Air.woff') format('woff'), url('../assets/fonts/FaktPro-Air.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fakt Hair';
+    src: url('../assets/fonts/FaktPro-Hair.eot');
+    src: url('../assets/fonts/FaktPro-Hair.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/FaktPro-Hair.woff') format('woff'), url('../assets/fonts/FaktPro-Hair.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fakt';
+    src: url('../assets/fonts/FaktPro-Thin.eot');
+    src: url('../assets/fonts/FaktPro-Thin.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/FaktPro-Thin.woff') format('woff'), url('../assets/fonts/FaktPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fakt';
+    src: url('../assets/fonts/FaktPro-ThinItalic.eot');
+    src: url('../assets/fonts/FaktPro-ThinItalic.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/FaktPro-ThinItalic.woff') format('woff'), url('../assets/fonts/FaktPro-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fakt';
+    src: url('../assets/fonts/FaktPro-Light.eot');
+    src: url('../assets/fonts/FaktPro-Light.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/FaktPro-Light.woff') format('woff'), url('../assets/fonts/FaktPro-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fakt';
+    src: url('../assets/fonts/FaktPro-Blond.eot');
+    src: url('../assets/fonts/FaktPro-Blond.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/FaktPro-Blond.woff') format('woff'), url('../assets/fonts/FaktPro-Blond.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fakt';
+    src: url('../assets/fonts/FaktPro-Normal.eot');
+    src: url('../assets/fonts/FaktPro-Normal.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/FaktPro-Normal.woff') format('woff'), url('../assets/fonts/FaktPro-Normal.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fakt';
+    src: url('../assets/fonts/FaktPro-Medium.eot');
+    src: url('../assets/fonts/FaktPro-Medium.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/FaktPro-Medium.woff') format('woff'), url('../assets/fonts/FaktPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fakt';
+    src: url('../assets/fonts/FaktPro-SemiBold.eot');
+    src: url('../assets/fonts/FaktPro-SemiBold.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/FaktPro-SemiBold.woff') format('woff'), url('../assets/fonts/FaktPro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}

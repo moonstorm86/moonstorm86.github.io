@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=false">
+    <title>Saffi Foods</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lekton|Lato|Zilla+Slab');
+        @import url("https://use.typekit.net/yzh8jbs.css");
+        /* @import url('https://fonts.googleapis.com/css?family=Zilla+Slab'); */
+    </style>
+
+    <!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+
+    <!-- <script src="jquery-3.4.1.min.js"></script> -->
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <!-- Stylesheet -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Vidaloka&display=swap');
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="fonts.css" /> -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/icon-tab.ico">
+
+    <script src="https://use.fontawesome.com/a891bb0a11.js"></script>
+    <script src="script.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript">
+        window.heap = window.heap || [], heap.load = function(e, t) {
+            window.heap.appid = e, window.heap.config = t = t || {};
+            var r = t.forceSSL || "https:" === document.location.protocol,
+                a = document.createElement("script");
+            a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") +
+                "//cdn.heapanalytics.com/js/heap-" + e + ".js";
+            var n = document.getElementsByTagName("script")[0];
+            n.parentNode.insertBefore(a, n);
+            for (var o = function(e) {
+                    return function() {
+                        heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                    }
+                }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify",
+                    "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"
+                ], c = 0; c < p.length; c++) heap[p[c]] = o(p[c])
+        };
+        heap.load("1409449789");
+    </script>
+</head>
+
+<body>
+    <div class="spinner-wrapper">
+        <div class="p-center-wrapper">
+            <div class="la-line-scale la-dark">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <h4 id="preloader-title"></h4>
+                <h5 id="preloader-content"></h5>
+            </div>
+
+        </div>
+
+    </div>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar-id">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsible-nav" style="margin-top: 17px;">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="cswan" href="index.html">Chris Swan</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="collapsible-nav">
+            <ul class="nav navbar-nav">
+                <li><a class="selected hvr-underline-from-left" href=""><em>projects</em></a></li>
+                <li><a class="hvr-underline-from-left" href="./assets/pdf/Swan_UX_August2019.pdf" target="_blank"><em>resume</em></a></li>
+                <li><a class="hvr-underline-from-left" href="contact.html"><em>information</em></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row" style="margin-top: 50px">
+            <nav class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+                <div class="bs-docs-sidebar">
+                    <ul class="nav nav-stacked" id="sidebar">
+
+                        <li>
+                            <a href="#overview">Overview</a>
+                            <ul class="nav nav-stacked">
+                                <li><a href="#problem">Problem</a></li>
+                                <li><a href="#solution">Solution</a></li>
+                                <li><a href="#methods">Our Approach</a></li>
+                                <li><a href="#my-role">My Contribution</a></li>
+                                <li><a href="#design-outcome">Design Outcome</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#research">Research</a>
+                            <ul class="nav nav-stacked">
+                                <li><a href="#domain-research">Domain Research</a></li>
+                                <li><a href="#surveys-and-interviews">Surveys & Interviews</a></li>
+                                <li><a href="#key-takeaways">Key Takeaways</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#design">Design</a>
+                            <ul class="nav nav-stacked">
+                                <li><a href="#ideation">Ideation</a></li>
+                                <li><a href="#design-alt">Design Alternatives</a></li>
+                                <li><a href="#user-feedback">User Feedback & Design Implications</a></li>
+                                <li><a href="#info-arch">Information Architecture</a></li>
+                                <li><a href="#wireframes">Wireframes</a></li>
+                                <li><a href="#user-flow">User Flow</a></li>
+                                <li><a href="#final-prototype">Final Prototype</a></li>
+                                <li><a href="#design-considerations">Design Considerations</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#evaluate">Evaluate</a>
+                            <ul class="nav nav-stacked">
+                                <li><a href="#usability">Usability Testing</a></li>
+                                <!-- <li><a href="#design-iterations">Design Iterations</a></li> -->
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="bg bg-saffi" data-aos="fade-up" data-aos-duration="600"></div>
+            <div class="jumbotron">
+                <div class="jumbotron-text">
+                    <!-- <h1>Eatxplore</h1>
+            <p class="lead">Breaking the Cultural Barriers of Food.</p> -->
+                </div>
+            </div>
+
+            <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+                <!-- <div data-aos="fade-up" data-aos-duration="600">
+            <h1 class="article-title">Mirror Mirror</h1>
+
+            <p class="article-subtitle">Helping emerging adults reflect on their past purchasing decisions and form good financial habits</p>
+            <hr>
+
+            <img src="../../assets/walker-perspective3.png" alt="Financial Literacy" class="img-responsive col-centered full-img">
+          </div> -->
+
+
+                <section id="overview" class="group first-section" data-aos="fade-up" data-aos-duration="600">
+                    <h6> </h6><br>
+                    <h3>Overview</h3>
+                    <hr>
+
+                    <div class="row">
+                        <div id="problem" class="subgroup-left-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <h4>Problem</h4>
+                            <p>Transporting bulk olive oil from the grocery to the pantry can be a messy endeavor. Most people who do it have a solution they’ve developed for themselves. However, many people would like to benefit from the lower cost, higher
+                                quality and sustainability of purchasing bulk olive oil (as well as other liquid products). </p>
+
+                            <h4 id="solution">Solution</h4>
+                            <p>We developed a product system that makes dispensing and transporting bulk olive oil from grocery to kitchen.
+                            </p>
+                            <h4>Goals</h4>
+                            <p>
+                                Create an easier, more delightful experience for people to transport bulk olive oil from the grocery to the kitchen. Have two modes for the container: Travel and Display
+
+                            </p>
+                        </div>
+
+                        <div class="subgroup-right-side col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <h4>My Role</h4>
+                            <p>UX Designer, Prototyping</p>
+                            <h4>Client</h4>
+                            <img src="./assets/img/saffiLogo.png" alt="" class="img-fluid" style="max-width: 40%; margin: 0px 0px 0px 0px;">
+                            <h4>Timeline</h4>
+                            <p>August. 2018 - Nov. 2018 </p>
+                            <h4>Team Members</h4>
+                            <p>Chris Swan | Sahana Mahadevan | Jeshwanth Srinivasan </p>
+                            <h4></h4>
+                            <h4>Tools</h4>
+                            <p>Adobe Illustrator, Adobe InDesign, Rhino3D, Physical Prototyping</p>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </section>
+
+                <div id="methods" class="subgroup">
+                    <h4>Our Approach</h4>
+                    <img class="img-responsive full-img" src="./assets/img/aprh-saf.jpg" alt="">
+                </div>
+
+                <div id="my-role" class="subgroup">
+                    <h4>My Contribution</h4>
+                    <p>I planned and conducted field visits with the client and other team memebers. I collaborated with the team to plan and conduct user interviews; some were at home, others were on-site and all were either semi-structured or unstructured
+                        in the initial phase. I built physical prototypes and helped migrate those to Rhino3D for modeling. I collaborated with the other members to produce final 3D prints. I also planned and executed usability testing with our prototypes
+                        at several levels of the process and conducted more structured interviews during the evaluation phase of development.
+                        <br><br> Throughout the project I collaborated with our team on concept development and product direction. During interviews and field visits, I kept detailed notes and audio recordings of our research process. I maintained photographic
+                        documentation of fieldwork and our prototyping process throughout all levels of the project.
+                        <br>
+                    </p>
+                </div>
+
+                <div id="design-outcome" class="subgroup">
+                    <h4>More details coming soon!</h4>
+                </div>
+            </div>
+            <!-- <img class="img-responsive full-screen-img" src="./assets/img/saffi-design-outcome.jpg" alt="Design Outcome"><br><br> -->
+            <!-- <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+                <section class="group">
+                    <div class="subgroup">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+                            <p class="p-center-wrapper">
+                                <a href="#final-prototype" class="btn black-button" type="button" name="button">Jump to Prototype
+
+                                </a>
+                            </p>
+                            <br><br>
+                        </div>
+                    </div>
+
+                </section> -->
+            <!-- <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+                <section class="group">
+                    <div class="subgroup">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+                            <p class="p-center-wrapper container" style="text-align: center;"><a href="#final-prototype" class="btn black-button" type="button" name="button">Jump to Prototype</a></p>
+                            <br><br>
+                        </div>
+                    </div>
+
+                </section> -->
+
+            <!-- 
+                <section id="research" class="group" data-aos="fade-up" data-aos-duration="600">
+
+                    <h3>Research</h3>
+                    <hr>
+                    <div class="subgroup">
+                        <p>We started the project having a vague idea that we hope to help young Americans learn more about personal finance. Initially, we hoped to help parents better educate their teenage children about personal finance. <span class="highlight highlight-walker">However, we
+                                pivoted based on our primary and
+                                secondary research, and focused on helping emerging adults aged between 18 and 25
+                                form better financial habits.</span></p>
+                    </div>
+                    <div id="domain-research" class="subgroup">
+                        <h4>Domain Research</h4>
+                        <p>To better understand the problem space, we conducted a <span class="highlight highlight-walker">literature review</span> and a <span class="highlight highlight-walker">competitive analysis</span>. For the competitive analysis,
+                            we focused on financial education products for children and financial management products for the general population.
+
+
+                            <img class="img-responsive" src="../../assets/walker-comp-analysis-all.png" alt="competitive analysis">
+                            <p class="img-caption">Products we analyzed for the Competitive Analysis</p>
+                            <br><br>
+
+                            <p class="small-margin-bottom">Our main findings include:</p>
+
+                            <ul>
+                                <li>American teenagers <span class="highlight highlight-walker">turn to their
+                                        parents for advice</span> when facing financial decision problems.</li>
+                                <li>Existing personal finance education apps are <span class="highlight highlight-walker">either too childish for teenagers or
+                                        too static to raise teenagers' interests.</span></li>
+                                <li>Personal finance management apps focus on <span class="highlight highlight-walker">budgeting instead of spending
+                                        wisely.</span></li>
+                                <li><span class="highlight highlight-walker">Few products target late
+                                        adolescents</span>, who are not yet motivated to learn about complicated financial concepts, but will soon need them as they start working or enter college.
+                                </li>
+                            </ul>
+
+                            <p class="small-margin-bottom">
+                                The results motivated us to:
+                            </p>
+
+                            <ul>
+                                <li><span class="highlight highlight-walker">Focus on parents of teenage
+                                        children</span> in our following surveys and interviews to learn about their barriers when it comes to educating their children about personal finance.
+                                </li>
+                                <li>Use a survey to <span class="highlight highlight-walker">verify if we should
+                                        narrow our target audience down to late adolescents and their
+                                        parents</span>.</li>
+                            </ul>
+
+
+
+
+                    </div>
+
+                    <div id="surveys-and-interviews" class="subgroup">
+                        <h4>Surveys & Interviews</h4><br>
+                        <h5 class="walker-h5">Surveys</h5>
+                        <p>We first used a survey to 1) help us <span class="highlight highlight-walker">narrow down
+                                our target user group</span> and 2) quickly learn about <span class="highlight highlight-walker">the most important financial concepts and the
+                                pain points</span> parents encounter when educating their children about personal finance. We chose parents of teenage children as our target audience based on the results of our domain research.<br></p>
+
+                        <img class="img-responsive full-img" src="../../assets/walker-survey.png" alt="Survey">
+                        <br><br><br>
+
+                        <h5 class="walker-h5">Interviews</h5>
+                        <p>We then conducted semi-structured interviews with <span class="highlight highlight-walker">financial experts and parents of teenage
+                                children</span> to 1) gain advice from experts and 2) dive deeper into the problems parents encounter when educating their children about personal finance. <br><br> We created an affinity map as a group to identify themes
+                            from our qualitative interview data.<br></p>
+
+                        <img class="img-responsive full-img" src="../../assets/walker-affinity-all.png" alt="">
+
+                        </p>
+
+                        <h5 class="walker-h5">Redefining Our User Group</h5>
+                        <p>Consistent with our domain research, we decided to focus on helping <span class="highlight highlight-walker">parents of late adolescents</span> because children in their early adolescence cannot understand certain personal finance
+                            knowledge. It is also critical for late adolescents to learn that knowledge before they start to face real-world financial decisions.<br><br> From our expert interviews, we also learned something unexpected--<span class="highlight highlight-walker">it was
+                                premature for us to assume that only teenagers need help with personal finance
+                                management</span>. Emerging adults, those between 18 and 25 years old, also do not know how to manage their own financial resources. <br><br> Therefore, we eventually focused our research on <span class="highlight highlight-walker">both parents of late
+                                adolecents, and emerging
+                                adults</span>.
+                        </p>
+
+
+                    </div>
+
+                    <div id="key-takeaways" class="subgroup">
+                        <h4>Key Takeaways</h4>
+                        <p>Based on the survey & interview results, we realized that <span class="highlight highlight-walker">both late adolescents and emerging adults aged
+                                between 18 and 25 have the need to learn to better manage their financial
+                                resources.</span> Since we cannot narrow down our user group based on our evidence, instead of arbitrarily deciding on a group to focus on, <span class="highlight highlight-walker">we delineated the different needs for pre-college
+                                teenagers and emerging adults, and brainstormed ideas for both.</span></p><br>
+
+                        <img class="img-responsive full-img" src="../../assets/walker-takeaway-1.png" alt="take aways">
+                        <br><br>
+                        <img class="img-responsive full-img" src="../../assets/walker-takeaway-2.png" alt="take aways">
+                        <br>
+                        <p class="p-center-wrapper container">
+                            <button data-toggle="collapse" data-target="#detailed-takeaways" class="btn black-button" name="button">See Detailed Takeaways</button></p>
+
+                        <div class="collapse" id="detailed-takeaways">
+                            <p class="small-margin-bottom">Our main findings include:</p>
+                            <ul>
+                                <li><span class="highlight highlight-walker">Budgeting</span>, <span class="highlight highlight-walker">staying out of debt</span>, and <span class="highlight highlight-walker">price vs. value</span> (knowing the difference
+                                    between the value and the price of something) are the top three concepts that parents want their children to learn before leaving home.</li>
+
+                                <li>Managing one's own financial resources seems to be a <span class="highlight highlight-walker">distant topic</span> for late adolecents and emerginng adults, who lack interests in learning financial knowledge.</li>
+
+                                <li>Parents <span class="highlight highlight-walker">lack tools</span> in educating their children about personal finance.</li>
+
+                                <li>Some parents consider themselves <span class="highlight highlight-walker">inadequate
+                                        in financial literacy</span> and thus cannot really educate their children effectively.
+                                </li>
+
+                                <li>Making a detailed budget plan and sticking to it (similar to a diet plan) is essential. <span class="highlight highlight-walker">However, most people, even
+                                        adults, only have a vague idea about their financial own status</span>.</li>
+
+                                <li>Impulse buying seems to be a major problem for emerging adults.</li>
+
+                                <li>Pre-college teenagers usually do not understand the importance of financial literacy when they are around their parents; once they enter college and start facing real-world financial decisions, they realize the importance
+                                    of learning personal finance knowledge, but they no longer have enough chance/motivation to ask their parents about the topic.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section> -->
+
+
+            <!-- <section id="design" class="group" data-aos="fade-up" data-aos-duration="600">
+                    <h3>Design</h3>
+                    <hr>
+
+                    <div id="ideation" class="subgroup">
+                        <h4>Ideation</h4>
+                        <p class="small-margin-bottom">Based on the evidence we collected from user research, we conducted an <span class="highlight highlight-walker">informed brainstorming
+                                session</span>. Each member first came up with a variety of ideas individually. The group then convened for several hours to share all the ideas and form a number of new ideas.
+                        </p>
+                        <br>
+                    </div>
+                </section>
+            </div>
+            <img class="img-responsive large-img" src="../../assets/walker-ideation-transparent.png" alt="Mind Map for Ideation" data-aos="fade-up" data-aos-duration="600">
+            <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+                <section class="group">
+                    <div class="subgroup">
+
+                        <br><br>
+
+                        <p class="p-center-wrapper container"><button data-toggle="collapse" data-target="#ideation-process" class="btn black-button" name="button">See Detailed
+                                Ideation Process</button></p>
+
+                        <div class="collapse" id="ideation-process">
+                            <p>
+                                We followed a roundtable “yes and” collaborative ideation process, in which we added on each other’s ideas to push them further for more details. We also voiced potential difficulties for the ideas on the list so that we can either further develop them
+                                and produce possible solutions, or eliminate them because of their low feasibility.
+                                <br><br> We then narrowed down our ideas by grouping similar ones into bigger themes.
+                                <span class="highlight highlight-walker">We also referred back to the main
+                                    findings in our user research, to make sure that all the themes we identified
+                                    can address at least one of the main concerns of our users.</span>
+                            </p>
+                        </div>
+                        <p>Eventually, we narrowed our ideas down to the following four large themes that address our users’ concerns from different perspectives. <span class="highlight highlight-walker">The
+                                first two concepts primarily address the need
+                                of emerging adults aged between 18 and 25, while the last two concepts target
+                                parents of late adolescents.</span></p>
+
+                        <img class="img-reponsive full-img" src="../../assets/walker-concepts2.png" alt="concepts">
+                        <br><br><br><br>
+
+
+
+                    </div> -->
+
+            <!-- <div id="design-alt" class="subgroup">
+                        <h4>Design Alternatives</h4>
+                        <p class="small-margin-bottom">We first quickly sketched out our four ideas on paper and discussed the main functionalities in each concept.</p>
+                        <img class="img-responsive full-img" src="../../assets/walker-sketches.png" alt="Sketches">
+                        <br>
+                        <p>After that, we created a usage scenario for each concept, and drew out wireframes for crucial screens that represent the essence of our ideas. <span class="highlight highlight-walker">We
+                                then showed the following concepts and
+                                scenarios to potential users, and asked them about their preferences and their
+                                feedback on our designs.</span>
+                        </p>
+                        <h5 class="walker-h5">Concept 1</h5>
+
+                        <p class="small-margin-bottom">Our first concept leverages push notifications to encourage users (emerging adults) to <span class="highlight highlight-walker">provide feedback to
+                                themselves over time.</span> With the user's own input, the system can generate personalized financial advice for the user.</p>
+                        <img class="img-responsive full-img" src="../../assets/walker-concept-1.png" alt="Concept 1">
+                        <p class="p-center-wrapper container"><button data-toggle="collapse" data-target="#why-concept-1" class="btn black-button" name="button">Why This
+                                Concept?</button></p>
+
+                        <div class="collapse" id="why-concept-1">
+                            <img class="img-responsive" src="../../assets/walker-concept-1-advantage.png" alt="Concept 1's Advantage">
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <h5 class="walker-h5">Concept 2</h5>
+                        <p class="small-margin-bottom">Concept 2 enables users (emerging adults) to set long-term financial goals, and <span class="highlight highlight-walker">clearly visualize how
+                                their current saving/spending behaviors can influence these goals.</span> It brings distant financial concepts closer to users and provides actionable suggestions on what users can do now to achieve their goals in the future.
+                        </p>
+                        <img class="img-responsive" src="../../assets/walker-concept-2.png" alt="Concept 1">
+                        <p class="p-center-wrapper container"><button data-toggle="collapse" data-target="#why-concept-2" class="btn black-button" name="button">Why This
+                                Concept?</button></p>
+
+                        <div class="collapse" id="why-concept-2">
+                            <img class="img-responsive" src="../../assets/walker-concept-2-advantage.png" alt="Concept 2's Advantage">
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <h5 class="walker-h5">Concept 3</h5>
+                        <p class="small-margin-bottom">Our third concept provides a comprehensive, step-by-step guide for parents to discuss financial matters with their children. It includes <span class="highlight highlight-walker">actionable steps parents can follow to involve
+                                their children in major financial decisions in the family.</span></p>
+                        <img class="img-responsive" src="../../assets/walker-concept-3.png" alt="Concept 1">
+
+                        <p class="p-center-wrapper container"><button data-toggle="collapse" data-target="#why-concept-3" class="btn black-button" name="button">Why This
+                                Concept?</button></p>
+
+                        <div class="collapse" id="why-concept-3">
+                            <img class="img-responsive" src="../../assets/walker-concept-3-advantage.png" alt="Concept 3's Advantage">
+                        </div> -->
+            <!-- <p class="small-margin-bottom list-title">Why This Concept:</p> -->
+
+            <br><br><br>
+            <!-- <h5 class="walker-h5">Concept 4</h5>
+                        <p class="small-margin-bottom">Concept 4 aims at <span class="highlight highlight-walker">giving
+                                children a sense of agency</span> by giving them a portion of the family's budget and letting them make spending decisions under the guidance of their parents. Parents will provide rewards depending on how well their children
+                            spend the money. </p>
+                        <img class="img-responsive" src="../../assets/walker-concept-4.png" alt="Concept 1">
+                        <p class="p-center-wrapper container"><button data-toggle="collapse" data-target="#why-concept-4" class="btn black-button" name="button">Why This
+                                Concept?</button></p>
+
+                        <div class="collapse" id="why-concept-4">
+                            <img class="img-responsive" src="../../assets/walker-concept-4-advantage.png" alt="Concept 4's Advantage"><br><br><br>
+                        </div>
+                    </div>
+
+                    <div id="user-feedback" class="subgroup">
+                        <h4>User Feedback & Design Implications</h4>
+
+                        <p class="small-margin-bottom">After gathering feedback from 15 users, <span class="highlight highlight-walker">we decided to proceed with Concept 1 as our core
+                                concept, and incorporate the short-term financial status analysis feature from
+                                Concept 2 into our final design</span>.</p>
+
+                        <p class="p-center-wrapper container"><button data-toggle="collapse" data-target="#concept-feedback-details" class="btn black-button" name="button">See
+                                Detailed User Feedback</button></p>
+
+                        <div class="collapse" id="concept-feedback-details">
+                            <p>Most users preferred Concept 1 and Concept 2, which target emerging adults. For Concept 3 and Concept 4, participants believed that parents might not want to follow the instructions in the tool, and might want to carry out
+                                our supported tasks outside of our tool. Though the aim of these concepts is to provide a much-needed platform for parents to start conversations on personal finance with their children, most users cannot see it happening.
+                                <span class="highlight highlight-walker">Therefore, we decided to narrow our choices
+                                    down to Concept 1 and Concept 2, and target emerging adults only.</span></p>
+
+                            <p>Several participants also pointed out that <span class="highlight highlight-walker">visualizing one's future financial conditions
+                                    based on current saving/spending behaviors might not make sense for emerging
+                                    adults</span>. People between 18 and 25 are generally in the process of choosing a field of study or exploring career opportunities; it's usually unclear to them how their financial conditions might change depending
+                                on their careers changes.
+                                <span class="highlight highlight-walker">As a result, Concept 2 might not seem
+                                    appealing to emerging adults.</span> However, participants did mention that having a short-term financial status analysis feature (with no long-term goal setting) is beneficial. Therefore,
+                                we incorporated the short-term financial status analysis feature into our final design.
+                            </p>
+                        </div>
+
+                        <p>We also derived several <span class="highlight highlight-walker">design
+                                implications</span> from participants' feedback on Concept 1 and Concept 2. Here are some examples:</p>
+
+                        <img class="img-responsive full-img" src="../../assets/walker-feedback-design.png" alt="Feedback and Design Implications"> <br><br>
+                    </div>
+
+                    <div id="info-arch" class="subgroup">
+                        <h4>Information Architecture</h4>
+                        <br>
+                        <img class="img-responsive full-img" src="../../assets/walker-IA-group.JPG" alt="IA Design Process"> <br><br>
+
+                        <p>With the design implications, we brainstormed the information architecture of our application individually, before meeting as a group and coming up with the following information architecture design:</p>
+
+                        <img class="img-responsive full-img" src="../../assets/walker-info-arch.png" alt="Wireframes">
+                        <br><br>
+                    </div>
+
+
+
+                    <div id="wireframes" class="subgroup">
+                        <h4>Wireframes</h4>
+                        <p>We created the following wireframes to make our ideas more concrete, and to make sure that the Information Architecture we derived make sense.</p>
+
+                    </div>
+                </section>
+            </div> -->
+
+            <div class="section-divider">
+                <div class="dot1">
+                </div>
+                <div class="dot2">
+                </div>
+                <div class="dot3">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <a href="" id="template-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+    <div class="container-fluid">
+        <div class="row footer-row">
+            <div class="footer col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p>
+                    <a class="hvr-underline-from-left" href="index.html">All</a> |
+                    <a class="hvr-underline-from-left" href="corsal.html">CoRSAL</a> |
+                    <a class="hvr-underline-from-left" href="meta.html">Meta App</a> |
+                    <a class="selected-footer" href="saffi.html">Saffi Foods</a> |
+                    <a class="hvr-underline-from-left" href="kbox.html">kbox</a> |
+                    <a class="hvr-underline-from-left" href="voiceinterfaces.html">Machine Voices</a> |
+                    <a class="hvr-underline-from-left" href="fake.html">Meddling Fantasy</a> |
+                    <a class="hvr-underline-from-left" href="mindfield.html">mindfield</a> |
+                    <a class="hvr-underline-from-left" href="wake.html">wake</a> |
+                    <a class="hvr-underline-from-left" href="sokoman.html">sokoman</a>
+                </p>
+                <br>
+                <br>
+                <p class="footer-text">Designed and Handcoded by <a href="./contact.html"> me</a></p>
+            </div>
+            <div class="footer-icons col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p>
+                    <a href="https://www.linkedin.com/in/chrisswan51/" target="_blank"><i class="fa fa-linkedin fa-lg"
+                            aria-hidden="true"></i></a>
+                    <a href="https://medium.com/" target="_blank"><i class="fa fa-medium fa-lg"
+                            aria-hidden="true"></i></a>
+                    <a href="mailto:cswan2@id.iit.edu" target="_blank"><i class="fa fa-envelope-o fa-lg"
+                            aria-hidden="true"></i></a>
+                </p>
+                <br>
+                <p class="footer-text-small">Chris Swan © 2019 All Rights Reserved</p>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

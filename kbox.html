@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=false">
+    <title>tbox</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <style>
+        @import url("https://use.typekit.net/yzh8jbs.css");
+        /* @import url('https://fonts.googleapis.com/css?family=Zilla+Slab'); */
+    </style>
+
+    <!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+
+    <!-- <script src="jquery-3.4.1.min.js"></script> -->
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <!-- Stylesheet -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Vidaloka&display=swap');
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="fonts.css" /> -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/icon-tab.ico">
+
+    <script src="https://use.fontawesome.com/a891bb0a11.js"></script>
+    <script src="script.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript">
+        window.heap = window.heap || [], heap.load = function(e, t) {
+            window.heap.appid = e, window.heap.config = t = t || {};
+            var r = t.forceSSL || "https:" === document.location.protocol,
+                a = document.createElement("script");
+            a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") +
+                "//cdn.heapanalytics.com/js/heap-" + e + ".js";
+            var n = document.getElementsByTagName("script")[0];
+            n.parentNode.insertBefore(a, n);
+            for (var o = function(e) {
+                    return function() {
+                        heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                    }
+                }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify",
+                    "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"
+                ], c = 0; c < p.length; c++) heap[p[c]] = o(p[c])
+        };
+        heap.load("1409449789");
+    </script>
+</head>
+
+<body>
+    <div class="spinner-wrapper">
+        <div class="p-center-wrapper">
+            <div class="la-line-scale la-dark">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <h4 id="preloader-title"></h4>
+                <h5 id="preloader-content"></h5>
+            </div>
+
+        </div>
+
+    </div>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar-id">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsible-nav" style="margin-top: 17px;">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="cswan" href="index.html">Chris Swan</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="collapsible-nav">
+            <ul class="nav navbar-nav">
+                <li><a class="selected hvr-underline-from-left" href=""><em>projects</em></a></li>
+                <li><a class="hvr-underline-from-left" href="./assets/pdf/Swan_UX_August2019.pdf" target="_blank"><em>resume</em></a></li>
+                <li><a class="hvr-underline-from-left" href="contact.html"><em>information</em></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row" style="margin-top: 50px">
+            <nav class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+                <div class="bs-docs-sidebar">
+                    <ul class="nav nav-stacked" id="sidebar">
+
+                        <li>
+                            <a href="#overview">Overview</a>
+                            <ul class="nav nav-stacked">
+                                <li><a href="#problem">Brief</a></li>
+                                <li><a href="#solution">Solution</a></li>
+                                <li><a href="#methods">Approach</a></li>
+                                <li><a href="#my-role">My Contribution</a></li>
+                                <li><a href="#design-outcome">Design Outcome</a></li>
+                                <!-- <li><a href="#lessons-learned">What I Learned</a></li> -->
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#research">Research</a>
+                            <ul class="nav nav-stacked">
+                                <li><a href="#domain-research">Domain Research</a></li>
+                                <li><a href="#surveys-and-interviews">Surveys & Interviews</a></li>
+                                <li><a href="#key-takeaways">Key Takeaways</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#design">Design</a>
+                            <ul class="nav nav-stacked">
+                                <li><a href="#ideation">Ideation</a></li>
+                                <li><a href="#design-alt">Design Alternatives</a></li>
+                                <li><a href="#user-feedback">User Feedback & Design Implications</a></li>
+                                <li><a href="#info-arch">Information Architecture</a></li>
+                                <li><a href="#wireframes">Wireframes</a></li>
+                                <li><a href="#user-flow">User Flow</a></li>
+                                <li><a href="#final-prototype">Final Prototype</a></li>
+                                <li><a href="#design-considerations">Design Considerations</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#final-prototype">Final Prototype</a>
+                            <ul class="nav nav-stacked">
+                                <!-- <li><a href="#usability">Usability Testing</a></li> -->
+                                <!-- <li><a href="#design-iterations">Design Iterations</a></li> -->
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="bg bg-tbox" data-aos="fade-up" data-aos-duration="600"></div>
+            <div class="jumbotron">
+            </div>
+        </div>
+
+        <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+
+            <section id="overview" class="group first-section" data-aos="fade-up" data-aos-duration="600">
+                <h6> </h6><br>
+                <h3>Overview</h3>
+                <hr>
+
+                <div class="row">
+                    <div id="problem" class="subgroup-left-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <h4>Brief</h4>
+                        <p>Design a toolbox for storing household tools or a specialist’s toolset in order to gain first-hand understanding of design issues, including:
+
+                            <ul>
+                                <li>part tolerance</li>
+                                <li>unforgiving material constraints</li>
+                                <li>part specification</li>
+                                <li>material strength</li>
+                                <li>functionality (structure + form) </li>
+                            </ul>
+
+                        </p>
+
+
+                        <h4 id="solution">How might we...</h4>
+                        <p>Reduce the load of kitchen items to essentials and prioritize protection?
+                        </p>
+                    </div>
+
+                    <div class="subgroup-right-side col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <h4>My Role</h4>
+                        <p>Product Designer, UX Designer, UX Researcher</p>
+                        <h4>Timeline</h4>
+                        <p>2 weeks</p>
+                        <h4>Deliverables</h4>
+                        <p>
+                            Secondary Research<br> Physical Prototype <br> 3D Model <br> Presentation Poster
+                        </p>
+
+                        <h4>Tools</h4>
+                        <p>Hardware, Rhino3D, Photoshop / InDesign / Illustrator</p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <div id="methods" class="subgroup">
+                <h4>Our Approach</h4>
+                <img class="img-responsive full-img" src="./assets/img/aprh-tbox.jpg" alt="">
+            </div> -->
+
+            <div id="design-outcome" class="subgroup">
+                <h4>Design Outcome</h4>
+                <p>Polyurethane foam-strips along the lid interior creates a friction seal assuring the kit stays shut in transit, while laser cut inserts (not shown) keep a chef’s essential ingredients in place. Embedded magnets on the lid interior keep
+                    the kitchen tools in place, like magnetized strips you’d find secured to a kitchen wall. Intentionally designed without a handle, the toolbox can be grasped by hand, cradled under one’s arm or packed easily into a tote bag. </p>
+            </div>
+        </div> <img class="img-responsive full-screen-img" src="./assets/img/tbox-design-outcome.jpg" alt="Design Outcome"><br><br>
+        <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content ">
+            <section class="group ">
+                <div class="subgroup ">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row ">
+                        <!-- <p class="p-center-wrapper container " style="text-align: center; ">
+                            <a href="#final-prototype " class="btn black-button " type="button " name="button ">Jump to
+                                Prototype
+
+                            </a></p><br><br> -->
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- <p class="p-center-wrapper container">
+                <button data-toggle="collapse" data-target="#detailed-takeaways" class="btn black-button" name="button">More Details</button></p>
+
+            <div class="collapse" id="detailed-takeaways">
+                <a href="mailto:cswan2@id.iit.edu" target="_blank">
+                    <h3>More coming soon...</h3>
+                    <h3>Contact for more details!</h3>
+                </a>
+
+            </div>
+ -->
+
+            <div class="section-divider">
+                <div class="dot1">
+                </div>
+                <div class="dot2">
+                </div>
+                <div class="dot3">
+                </div>
+            </div>
+
+            <!-- <section id="design" class="group" data-aos="fade-up" data-aos-duration="600">
+                <h3>Design</h3>
+                <hr>
+
+                <div id="ideation" class="subgroup"> -->
+            <!-- <h4>Information Architecture and Wireframes</h4> -->
+            <!-- <p>
+                    </p>
+
+                </div>
+            </section>
+        </div>
+
+        <div class="section-divider">
+            <div class="dot1">
+            </div>
+            <div class="dot2">
+            </div>
+            <div class="dot3">
+            </div> -->
+
+
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row footer-row">
+            <div class="footer col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p>
+                    <a class="hvr-underline-from-left" href="index.html">All</a> |
+                    <a class="hvr-underline-from-left" href="corsal.html">CoRSAL</a> |
+                    <a class="hvr-underline-from-left" href="meta.html">Meta App</a> |
+                    <a class="selected-footer" href="saffi.html">Saffi Foods</a> |
+                    <a class="hvr-underline-from-left" href="kbox.html">kbox</a> |
+                    <a class="hvr-underline-from-left" href="voiceinterfaces.html">Machine Voices</a> |
+                    <a class="hvr-underline-from-left" href="fake.html">Meddling Fantasy</a> |
+                    <a class="hvr-underline-from-left" href="mindfield.html">mindfield</a> |
+                    <a class="hvr-underline-from-left" href="wake.html">wake</a> |
+                    <a class="hvr-underline-from-left" href="sokoman.html">sokoman</a>
+                </p>
+                <br>
+                <br>
+                <p class="footer-text">Designed and Handcoded by <a href="./contact.html"> me</a></p>
+            </div>
+            <div class="footer-icons col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p>
+                    <a href="https://www.linkedin.com/in/chrisswan51/" target="_blank"><i class="fa fa-linkedin fa-lg"
+                            aria-hidden="true"></i></a>
+                    <a href="https://medium.com/" target="_blank"><i class="fa fa-medium fa-lg"
+                            aria-hidden="true"></i></a>
+                    <a href="mailto:cswan2@id.iit.edu" target="_blank"><i class="fa fa-envelope-o fa-lg"
+                            aria-hidden="true"></i></a>
+                </p>
+                <br>
+                <p class="footer-text-small">Chris Swan © 2019 All Rights Reserved</p>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

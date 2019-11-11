@@ -1,493 +1,361 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <!-- Required meta tags -->
-    <!-- <meta charset="utf-8"> -->
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script></script>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=false">
+    <title>Chris Swan</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
     <style>
         @import url('https://fonts.googleapis.com/css?family=Lekton|Lato|Zilla+Slab');
         @import url("https://use.typekit.net/yzh8jbs.css");
+        @import url("https://use.typekit.net/yzh8jbs.css");
         /* @import url('https://fonts.googleapis.com/css?family=Zilla+Slab'); */
     </style>
-    <link href="grid.css" rel="stylesheet">
-    <title>Christopher Swan Portfolio</title>
+
+    <!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+
+    <!-- <script src="jquery-3.4.1.min.js"></script> -->
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <!-- Stylesheet -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Vidaloka&display=swap');
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="fonts.css" /> -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/icon-tab.ico">
+
+    <script src="https://use.fontawesome.com/a891bb0a11.js"></script>
+    <script src="script.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript">
+        window.heap = window.heap || [], heap.load = function(e, t) {
+            window.heap.appid = e, window.heap.config = t = t || {};
+            var r = t.forceSSL || "https:" === document.location.protocol,
+                a = document.createElement("script");
+            a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") +
+                "//cdn.heapanalytics.com/js/heap-" + e + ".js";
+            var n = document.getElementsByTagName("script")[0];
+            n.parentNode.insertBefore(a, n);
+            for (var o = function(e) {
+                    return function() {
+                        heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                    }
+                }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify",
+                    "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"
+                ], c = 0; c < p.length; c++) heap[p[c]] = o(p[c])
+        };
+        heap.load("1409449789");
+    </script>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-light bg-light">
-        <a id="cswan" class="navbar-brand" href="index.html">Chris Swan</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="spinner-wrapper">
+        <div class="p-center-wrapper">
+            <div class="la-line-scale la-dark">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <h4 id="preloader-title"></h4>
+                <h5 id="preloader-content"></h5>
+            </div>
 
-        <div class="collapse navbar-collapse" id="navbarsExample01">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./assets/pdf/Swan_UX_August2019.pdf">resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html"><em>information</em> </a>
-                </li>
+        </div>
+
+    </div>
+
+    <!-- replace or audit -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar-id">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsible-nav" style="margin-top: 17px;">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="cswan" href="home.html">Chris Swan</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="collapsible-nav">
+            <ul class="nav navbar-nav">
+                <li><a class="selected hvr-underline-from-left" href=""><em>projects</em></a></li>
+                <li><a class="hvr-underline-from-left" href="./assets/pdf/Swan_UX_August2019.pdf" target="_blank"><em>resume</em></a></li>
+                <li><a class="hvr-underline-from-left" href="contact.html"><em>information</em></a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- Hero image; graphic bio -->
 
-    <!-- Start Container -->
-    <div class="container">
+    <div class="container-fluid col-centered col-lg-7 col-md-7 col-sm-9 col-xs-12">
+        <p class="p-center-wrapper"></p>
+        <!-- <img id="tshape" data-aos="fade-up" data-aos-duration="1000" src="../assets/portfolio-T-shape-new.png" alt="">
+        
+            <p class="p-center-wrapper portfolio-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                UX<span class="highlight-link"></span><br>
+            </p>
+            <div class="arrow bounce" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-offset="-300"><a href="#my-work"><i class="fa fa-angle-down fa-3x" aria-hidden="true"></i></a>
+        </div> -->
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
 
+    <!-- start project container -->
 
-        <!-- Work Heading-->
-        <div>
-            <div>
-                <div style="padding-top: 100px;">
-                    <hr>
-                    <h3 id="work">Work</h3>
-                </div>
-            </div>
-        </div>
+    <div class="container-fluid col-centered" id="my-work">
 
-        <!-- Corsal -->
-        <hr>
-        <div>
-            <div>
-                <!-- <hr style="border-top: 2px black solid"> -->
-                <h2 class="projects" style="border-bottom: 2px black solid; padding-top: 50px">endangered language archive
-                </h2>
-                <h2 class="projects-sub"><em>Research and UX Design with CoRSAL.</em>
-                </h2>
-            </div>
-            <div class="row-p2">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <a href="./corsal.html">
-                            <img class="reduce" src="./assets/img/HERO.jpg" style="padding-top: 10px" alt="">
-                        </a>
+        <ul class="thumbnail-grid">
 
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <p>Partnered with teams from the University of North Texas (UNT) and The Institute of Design, we translated primary research conducted by anthropologists at UNT, extracted insights and crafted design proposals to explore new ways
-                            to protect endangered languages.
-                        </p>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><strong>
-                                <a href="./corsal.html">Read
-                                    More</a>
-                            </strong></div>
-                        <div style="border-bottom: 1px black solid; padding-bottom: 10px"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-
-        <!-- mindfield -->
-
-        <div>
-            <div>
-                <h2 class="projects" style="border-bottom: 2px black solid;  padding-top: 50px">mindfield</h2>
-                <h2 class="projects-sub"><em> Exploring and developing interaction prototypes with our most precious
-                        biodata.</em>
-                </h2>
-            </div>
-            <div class="row-p1">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <a href="./mindfield.html">
-                            <img src="./assets/img/meshIterations.jpg" class="img-fluid" height:auto max-width: 100%; alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <p> The mindfield product series explores concepts related to neurofeedback or brainwave biofeedback. Neurofeedback creates a subconscious reward system that teaches the brain to function in an
-                            <em> optimal </em> range.
-                        </p>
-
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href="./mindfield.html">Read
-                                    More</a>
-                            </strong></div>
-                        <div class="col-6 col-md-4" style="padding-left: 0px">
-                            <a href="https://github.com/moonstorm86/mindfield"><strong>Github</strong></a>
+            <a href="corsal.html">
+                <li data-aos="fade-up" data-aos-duration="600" class="thumbnail-grid-item">
+                    <div class="card" style="background-image: url(./assets/img/heroCor.jpg); background-size: contain; background-repeat: no-repeat; ">
+                        <div class="card-pants">
+                            <h4 class="card-title">
+                                Endagered Language Archive
+                            </h4>
+                            <h5 class="card-subtitle">
+                                UX Research, UX/UI Design, Interactive Prototype
+                            </h5>
+                            <p class="card-content">
+                                A field tool for research linguists.
+                            </p>
                         </div>
-                        <div style="border-bottom: 1px black solid; padding-bottom: 10px"></div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
+                </li>
+            </a>
 
-        <!-- voice interfaces -->
-        <div>
-            <div>
-                <!-- <hr style="border-top: 2px black solid"> -->
-                <h2 class="projects" style="border-bottom: 2px black solid; padding-top: 50px">artificial artifacts</h2>
-                <h2 class="projects-sub"><em> Exploring research techniques.</em>
-                </h2>
-            </div>
-            <div class="row-p2">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <a href="./voiceinterfaces.html">
-                            <img class="reduce" src="./assets/img/pixelatedMan.JPG" style="padding-top: 10px" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="padding-bottom: 0px;">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <p>I explored classic research methods like in home interviews and secondary research to understand the practices, barriers, and attitudes of voice interface users. In an effort to increase the validity of my findings from the interviews,
-                            I built a simple web scraper with Python to gather more data from Reddit and did a cluster analysis of feature requests.
-                        </p>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><strong>
-                                <a href="./voiceinterfaces.html">Read
-                                    More</a>
-                            </strong></div>
-                        <div class="col-6 col-md-4" style="padding-left: 0px">
-                            <a href="https://github.com/moonstorm86/int-confidence"><strong>Github</strong></a>
+            <a href="meta.html">
+                <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" data-aos-offset="-50" class="thumbnail-grid-item">
+                    <div class="card" style="background-image: url(./assets/img/meta-card.jpg); background-size: contain; background-repeat: no-repeat; background-position:  left top;">
+                        <div class="card-pants">
+                            <h4 class="card-title">
+                                meta glucometer system
+                            </h4>
+                            <h5 class="card-subtitle">
+                                UX Research, UX Design, Prototyping, 3D Modeling
+                            </h5>
+                            <p class="card-content">
+                                Meta is a smart sensor IOT system designed to make managing diabetes more seamless. </p>
                         </div>
-                        <div style="border-bottom: 1px black solid; padding-bottom: 10px"></div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
+                </li>
+            </a>
 
-        <!-- Sokoman game -->
-        <div>
-            <div>
 
-                <h2 class="projects" style="border-bottom: 2px black solid; padding-top: 50px">sokoman
-                </h2>
-                <h2 class="projects-sub"> <em> Learning to build JavaScript appplications from scratch with the classic
-                        puzzle
-                        game Sokoban.</em></h2>
-
-            </div>
-            <div class="row-p2">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <a href="/sokoman/">
-                            <img class="reduce" src="./assets/img/sokoman.JPG" ; style="padding-top: 25px" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="padding-bottom: 0px;">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <p>Works only on desktop (for now). Users may quickly learn that as the difficulty of the game increases, you can create unsolvable positions. This is the main obstacle in solving problems in Sokoban or otherwise.
-                        </p>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href="/sokoman/">Play!</a>
-                            </strong></div>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><strong>
-                                <a href="/sokomans.html">Read
-                                    More</a>
-                            </strong></div>
-
-                        <div class="col-6 col-md-4" style="padding-left: 0px">
-                            <a href="https://github.com/moonstorm86/sokoman"><strong>Github</strong></a>
+            <a href="saffi.html">
+                <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" data-aos-offset="-50" class="thumbnail-grid-item">
+                    <div class="card" style="background-image: url('./assets/img/saffi-card.jpg'); background-size: 105%; background-repeat: no-repeat; background-position: top center;">
+                        <div class="card-pants">
+                            <h4 class="card-title">
+                                saffi foods
+                            </h4>
+                            <h5 class="card-subtitle">
+                                UX Research, UX Design, Prototyping, 3D Modeling
+                            </h5>
+                            <p class="card-content">
+                                Innovating user experience via bulk olive oil from grocery to pantry.
+                            </p>
                         </div>
-                        <div style="border-bottom: 1px black solid; padding-bottom: 10px"></div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
+                </li>
+            </a>
 
-        <!-- Transparadox -->
-        <!-- <div>
-            <div>
-                <h2 class="projects" style="border-bottom: 2px black solid">transparadox</h2>
-            </div>
-            <div class="row-p2">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <a href="./trans.html">
-                            <img src="./assets/img/square.JPG" style="padding-top: 25px" alt="">
-                        </a>
+            <a href="tbox.html">
+                <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" data-aos-offset="-50" class="thumbnail-grid-item">
+                    <div class="card" style="background-image: url(./assets/img/tbox-card.jpg); background-size: contain; background-repeat: no-repeat; ;">
+                        <div class="card-pants">
+                            <h4 class="card-title">
+                                tbox
+                            </h4>
+                            <h5 class="card-subtitle">
+                                Product Design
+                            </h5>
+                            <p class="card-content">
+                                Toolbox for essential equipment made from stainless steel. Meditation on the future of packaging.
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </li>
+            </a>
 
-            <div class="row" style="padding-bottom: 0px;">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <p>This project explores areas of tension related to big data and how we might use them to
-                            develop a
-                            framework to offset negative trends that are emerging and increase consumer trust.
-                        </p>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href="./trans.html">Read
-                                    more</a>
-                            </strong></div>
-                        <div style="border-bottom: 1px black solid; padding-bottom: 10px"></div>
+            <a href="voiceinterfaces.html">
+                <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" class="thumbnail-grid-item">
+                    <div class="card" style="background-image: url(./assets/img/harold.jpg); background-size:55%; background-repeat: no-repeat; background-position: 50% 15%;">
+                        <div class="card-pants">
+                            <h4 class="card-title">
+                                Machine Voices
+                            </h4>
+                            <h5 class="card-subtitle">
+                                UX Research, Python Web Scraper, Data Analysis
+                            </h5>
+                            <p class="card-content">
+                                Generative research exploring voice interface technology.
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br> -->
+                </li>
+            </a>
 
-        <!-- fake news -->
-        <div>
-            <div>
-                <!-- <hr style="border-top: 2px black solid"> -->
-                <h2 class="projects" style="border-bottom: 2px black solid; padding-top: 50px">meddling fantasy</h2>
-                <h2 class="projects-sub"><em>Exploring social media, fake news and it's impact on the world.</em> </h2>
-            </div>
-            <div class="row-p2">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <a href="./fake.html">
-                            <img class="fake" src="./assets/img/fakenewshero.png" alt="">
-                        </a>
+            <a href="fake.html">
+                <li class="thumbnail-grid-item">
+                    <div class="card" style="background-image: url(./assets/img/fakenewshero.jpg); background-size: contain;background-repeat: no-repeat; background-position: 50% 35%;">
+                        <div class="card-pants">
+
+                            <h4 class="card-title">
+                                Meddling Fantasy
+                            </h4>
+                            <!-- <div class="card-icon">Research</div> -->
+                            <h5 class="card-subtitle">
+                                UX Research, Historical Analysis, Literature Review, Essay
+                            </h5>
+                            <p class="card-content">
+                                Historical analysis of social media hoping to mitigate the heightened affect caused by it. </p>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </li>
+            </a>
 
-            <div class="row" style="padding-bottom: 0px;">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <p>Our goal was to understand the broader context that surrounds fake news and the challenges faced by social media stakeholders with the hope of laying the foundation for a strategic design solution.
-                        </p>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><strong> <a href="./fake.html">Read
-                                    more</a>
-                            </strong></div>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href=""></a>
-                            </strong></div>
-                        <div style="border-bottom: 1px black solid; padding-bottom: 10px"></div>
+            <a href="mindfield.html">
+                <li class="thumbnail-grid-item">
+                    <div class="card" style="background-image: url(./assets/img/meshIterations.jpg);background-size: contain; background-repeat: no-repeat; ">
+                        <div class="card-pants">
+                            <h4 class="card-title">
+                                mindfield
+                            </h4>
+                            <h5 class="card-subtitle">
+                                UX Research, Interaction Prototyping, Speculative Design, IOT </h5>
+                            <p class="card-content">
+                                The mindfield conceptual product system explores futures with connected brains.
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
+                </li>
+            </a>
 
-        <!-- Wake App -->
-        <div>
-            <div>
-                <!-- <hr style="border-top: 2px black solid"> -->
-                <h2 class="projects" style="border-bottom: 2px black solid; padding-top: 50px">wake app</h2>
-                <h2 class="projects-sub"><em>A neurological spam filter.</em> </h2>
-            </div>
-            <div class="row-p2">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <a href="">
-                            <img class="reduce" src="./assets/img/wake app-100.jpg" style="padding-top: 25px" alt="">
-                        </a>
+            <a href="/sokoman/">
+                <li data-aos="fade-up" data-aos-duration="600" data-aos-offset="-50" class="thumbnail-grid-item">
+                    <div class="card" style="background-image: url(./assets/img/sokoman.jpg); background-size: 55%; background-repeat: no-repeat; background-position: 50% 15%;">
+                        <div class="card-pants">
+
+                            <h4 class="card-title">
+                                sokoman
+                            </h4>
+                            <h5 class="card-subtitle">
+                                Front-End Development, Interaction Design
+                            </h5>
+                            <p class="card-content">
+                                Learning to build JavaScript appplications from scratch with the classic puzzle game Sokoban.
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </li>
+            </a>
 
-            <div class="row" style="padding-bottom: 0px;">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <p>In a world where information moves at the speed of light we need a subconscious filter to block the noise. Wake is a behavioral scientist's research tool and a speculative application that uses brain data to block intrusive platforms.
-                        </p>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><em><a href="./wake.html">More coming
-                                    soon!</a>
-                            </em></div>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href=""></a>
-                            </strong></div>
-                        <div style="border-bottom: 1px black solid; padding-bottom: 10px"></div>
+            <a href="wake.html">
+                <li class="thumbnail-grid-item">
+                    <div class="card" style="background-image: url(./assets/img/wakeapp.jpg); background-size: 50%; background-repeat: no-repeat;background-position: 50% 15%;">
+                        <div class="card-pants">
+                            <h4 class="card-title">
+                                wake app
+                            </h4>
+                            <h5 class="card-subtitle">
+                                UX Research, Systems Thinking, Speculative Service Design
+                            </h5>
+                            <p class="card-content">
+                                A speculative application that uses brain data to block intrusive platforms.
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
+                </li>
+            </a>
 
-        <!-- Motorolo Sensor / App -->
-        <div>
-            <div>
-                <!-- <hr style="border-top: 2px black solid"> -->
-                <h2 class="projects" style="border-bottom: 2px black solid; padding-top: 50px">meta app</h2>
-                <h2 class="projects-sub">Exploring smart sensors in medical technology and 3D form.</h2>
-            </div>
-            <div class="row-p2">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <a href="">
-                            <img src="./assets/img/meta.jpg" class="img-fluid" height:auto max-width: 80%; style="padding-top: 25px" alt="">
-                        </a>
+
+            <!-- <a href="langstd.html">
+                <li data-aos="fade-up" data-aos-duration="600" data-aos-offset="-50" data-aos-delay="200" class="thumbnail-grid-item">
+                    <div class="card" style="background-image: url(./assets/img/); background-size: contain; background-repeat: no-repeat;">
+                        <div class="card-pants">
+                            <h4 class="card-title">
+                                The Language Study
+                            </h4>
+                            <h5 class="card-subtitle">
+                                Data Analysis, Academic Research
+                            </h5>
+                            <p class="card-content">
+                                A speculative application that uses brain data to block intrusive platforms.
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </li>
+            </a> -->
 
-            <div class="row" style="padding-bottom: 0px;">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <p>Meta is a smart sensor developed with Motorola that eases the maintenance associated with diabetes.
-                        </p>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><em><a href="./meta.html">More coming
-                                    soon!</a>
-                            </em></div>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href=""></a>
-                            </strong></div>
-                        <div style="border-bottom: 1px black solid; padding-bottom: 10px"></div>
+            <!-- <a href="kalpa.html">
+                <li data-aos="fade-up" data-aos-duration="600" data-aos-offset="-50" class="thumbnail-grid-item">
+                    <div class="card" style="background-image: url(./assets/img/lightFinal.jpg); background-size: contain; background-repeat: no-repeat; background-position:50% 20%;">
+                        <div class="card-pants">
+                            <h4 class="card-title">
+                                kalpa
+                            </h4>
+                            <h5 class="card-subtitle">
+                                Product Design
+                            </h5>
+                            <p class="card-content">
+                                Exploring materials for the construction of lamps
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
+                </li>
+            </a> -->
 
-        <!-- Kalpa Light-->
-        <div>
-            <div>
-                <!-- <hr style="border-top: 2px black solid"> -->
-                <h2 class="projects" style="border-bottom: 2px black solid; padding-top: 50px">kalpa</h2>
-                <!-- <hr style="border-top: 1px black solid"> -->
-            </div>
-            <div class="row-p2">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <a href="kalpa.html">
-                            <img src="./assets/img/lightFinal.jpg" class="img-fluid" height:auto max-width: 80%; style="padding-top: 25px" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="row" style="padding-bottom: 0px;">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <p>Light series.
-                        </p>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><em><a href="./kalpa.html">More coming
-                                    soon!</a>
-                            </em></div>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href=""></a>
-                            </strong></div>
-                        <div style="border-bottom: 1px black solid; padding-bottom: 10px"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
 
-        <!-- Chef's Essentials-->
-        <div>
-            <div>
-                <!-- <hr style="border-top: 2px black solid"> -->
-                <h2 class="projects" style="border-bottom: 2px black solid; padding-top: 50px">cook kit</h2>
-                <h2 class="projects-sub"><em>Making toolboxes with stainless steel.</em> </h2>
 
-            </div>
-            <div class="row-p2">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <a href="cookkit.html">
-                            <img src="./assets/img/chefboxhero.jpg" class="img-fluid" height:auto max-width: 80%; style="padding-top: 25px" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
+        </ul>
+    </div>
 
-            <div class="row" style="padding-bottom: 0px;">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <p>A home cook's essentials toolbox.
-                        </p>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><em><a href="./cookkit.html">More coming
-                                    soon!</a>
-                            </em></div>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href=""></a>
-                            </strong></div>
-                        <div style="border-bottom: 1px black solid; padding-bottom: 10px"></div>
-                    </div>
-                </div>
+    <div class="container-fluid" style="margin-bottom: 30px;">
+        <div class="row footer-row">
+            <div class="footer col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p class="footer-text">Designed and Handcoded by me</p>
             </div>
-        </div>
-        <br>
-        <br>
-        <br>
+            <div class="footer-icons col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p>
+                    <a href="https://www.linkedin.com/in/chrisswan51/" target="_blank"><i class="fa fa-linkedin fa-lg"
+                            aria-hidden="true"></i></a>
+                    <!-- <a href="https://medium.com/" target="_blank"><i class="fa fa-medium fa-lg"
+                            aria-hidden="true"></i></a> -->
+                    <a href="mailto:cswan2@id.iit.edu" target="_blank"><i class="fa fa-envelope-o fa-lg"
+                            aria-hidden="true"></i></a>
+                </p>
+                <br>
+                <p class="footer-text-small">Chris Swan © 2019 All Rights Reserved</p>
 
-        <!-- Saffi-->
-        <div>
-            <div>
-                <!-- <hr style="border-top: 2px black solid"> -->
-                <h2 class="projects" style="border-bottom: 2px black solid; padding-top: 50px">saffi foods</h2>
-                <!-- <hr style="border-top: 1px black solid"> -->
-            </div>
-            <div class="row-p2">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <a href="">
-                            <img src="./assets/img/saffihero.jpg" class="img-fluid" height:auto max-width: 80%; style="padding-top: 25px" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" style="padding-bottom: 0px;">
-                <div class="col-12 col-md-8">
-                    <div>
-                        <p>Saffi Foods is a high quality olive oil distributor that was looking to develop a product system that could be used to transport bulk olive oil from grocery to pantry with an emphasis on sustainability.
-                        </p>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><em><a href="./saffi.html">More coming
-                                    soon!</a>
-                            </em></div>
-                        <div class="col-6 col-md-4" style="padding-left: 0px"><strong><a href=""></a>
-                            </strong></div>
-                        <div style="border-bottom: 1px black solid; padding-bottom: 10px"></div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
 
-    <!-- Systems Design -->
 
-    <br>
-    <br>
-    <br>
-
-    <!-- footer -->
-    <div style="border-bottom: 2px black solid; padding-bottom: 10px; margin: 50px;"></div>
-
-    <div class="container4" style="text-align: center;">
-        <div class="row">
-            <p class="about">web design and development by <a href="./contact.html"> me</a></p>
-        </div>
-    </div>
-
-    <!-- Optional JavaScript -->
-    <script src="./CracklePop.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
 </body>
 
 </html>

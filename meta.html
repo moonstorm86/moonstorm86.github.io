@@ -1,325 +1,267 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script></script>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=false">
+    <title>meta</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Lekton|Lato|Zilla+Slab');
         @import url("https://use.typekit.net/yzh8jbs.css");
         /* @import url('https://fonts.googleapis.com/css?family=Zilla+Slab'); */
     </style>
-    <link href="grid.css" rel="stylesheet">
-    <title>Christopher Swan Portfolio</title>
+
+    <!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+
+    <!-- <script src="jquery-3.4.1.min.js"></script> -->
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <!-- Stylesheet -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Vidaloka&display=swap');
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="fonts.css" /> -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/icon-tab.ico">
+
+    <script src="https://use.fontawesome.com/a891bb0a11.js"></script>
+    <script src="script.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript">
+        window.heap = window.heap || [], heap.load = function(e, t) {
+            window.heap.appid = e, window.heap.config = t = t || {};
+            var r = t.forceSSL || "https:" === document.location.protocol,
+                a = document.createElement("script");
+            a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") +
+                "//cdn.heapanalytics.com/js/heap-" + e + ".js";
+            var n = document.getElementsByTagName("script")[0];
+            n.parentNode.insertBefore(a, n);
+            for (var o = function(e) {
+                    return function() {
+                        heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                    }
+                }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify",
+                    "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"
+                ], c = 0; c < p.length; c++) heap[p[c]] = o(p[c])
+        };
+        heap.load("1409449789");
+    </script>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-light bg-light">
-        <a id="cswan" class="navbar-brand" href="index.html">Chris Swan</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="spinner-wrapper">
+        <div class="p-center-wrapper">
+            <div class="la-line-scale la-dark">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <h4 id="preloader-title"></h4>
+                <h5 id="preloader-content"></h5>
+            </div>
 
-        <div class="collapse navbar-collapse" id="navbarsExample01">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./assets/pdf/Swan_UX_August2019.pdf">resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html"><em>information</em> </a>
-                </li>
+        </div>
+
+    </div>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar-id">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsible-nav" style="margin-top: 17px;">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="cswan" href="index.html">Chris Swan</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="collapsible-nav">
+            <ul class="nav navbar-nav">
+                <li><a class="selected hvr-underline-from-left" href=""><em>projects</em></a></li>
+                <li><a class="hvr-underline-from-left" href="./assets/pdf/Swan_UX_August2019.pdf" target="_blank"><em>resume</em></a></li>
+                <li><a class="hvr-underline-from-left" href="contact.html"><em>information</em></a></li>
             </ul>
         </div>
     </nav>
+    <div class="container-fluid">
+        <div class="row" style="margin-top: 50px">
+            <nav class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+                <div class="bs-docs-sidebar">
+                    <ul class="nav nav-stacked" id="sidebar">
 
-    <!-- Start Container -->
-    <div class="container" style="padding-top: 25px; ">
+                        <li>
+                            <a href="#overview">Overview</a>
+                            <ul class="nav nav-stacked">
+                                <li><a href="#problem">Brief</a></li>
+                                <li><a href="#solution">Solution</a></li>
+                                <li><a href="#methods">Approach</a></li>
+                                <li><a href="#my-role">My Contribution</a></li>
+                                <li><a href="#design-outcome">Design Outcome</a></li>
+                                <!-- <li><a href="#lessons-learned">What I Learned</a></li> -->
+                            </ul>
+                        </li>
 
-        <!-- Hero Image -->
-        <div class="center">
-            <img src="" style="padding-top: 100px; padding-bottom: 50px">
+                        <li>
+                            <a href="#research">Research</a>
+                            <ul class="nav nav-stacked">
+                                <li><a href="#domain-research">Domain Research</a></li>
+                                <li><a href="#surveys-and-interviews">Surveys & Interviews</a></li>
+                                <li><a href="#key-takeaways">Key Takeaways</a></li>
+                            </ul>
+                        </li>
 
-            <!-- Role Description -->
-            <div>
-                <div>
-                    <h2 class="projects">meta app for Motorola</h2>
-                    <h2 class="role"> Research | Prototyping | Product Design</h2>
-                    <h2 class="sections"> <strong> Team: Jeshwanth, Chris </strong></h2>
+                        <li>
+                            <a href="#design">Design</a>
+                            <ul class="nav nav-stacked">
+                                <li><a href="#ideation">Ideation</a></li>
+                                <li><a href="#design-alt">Design Alternatives</a></li>
+                                <li><a href="#user-feedback">User Feedback & Design Implications</a></li>
+                                <li><a href="#info-arch">Information Architecture</a></li>
+                                <li><a href="#wireframes">Wireframes</a></li>
+                                <li><a href="#user-flow">User Flow</a></li>
+                                <li><a href="#final-prototype">Final Prototype</a></li>
+                                <li><a href="#design-considerations">Design Considerations</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#final-prototype">Final Prototype</a>
+                            <ul class="nav nav-stacked">
+                                <!-- <li><a href="#usability">Usability Testing</a></li> -->
+                                <!-- <li><a href="#design-iterations">Design Iterations</a></li> -->
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="bg bg-meta" data-aos="fade-up" data-aos-duration="600"></div>
+            <div class="jumbotron">
+            </div>
+        </div>
+
+        <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+
+            <section id="overview" class="group first-section" data-aos="fade-up" data-aos-duration="600">
+                <h6> </h6><br>
+                <h3>Overview</h3>
+                <hr>
+
+                <div class="row">
+                    <div id="problem" class="subgroup-left-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <h4>Problem</h4>
+                        <p>Access to healthcare is a major hurdle in many countries. People with chronic conditions such as diabetes tend to jam the system especially in places where healthcare has complex access situations. </p>
+
+                        <h4 id="solution">Solution</h4>
+                        <p>Through leveraging new connective capabilities and the increased reliability of IOT, we developed a new product suite to deliver a more seamless way for people to maintain care of their diabetes. </p>
+
+                    </div>
+
+                    <div class="subgroup-right-side col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <h4>My Role</h4>
+                        <p>UX Researcher | UX/UI Designer | 3D models </p>
+                        <h4>Client</h4>
+                        <img src="./assets/img/motoroloa.jpg" alt="" class="img-fluid" style="max-width: 20%; margin: 0px 0px 0px 0px;">
+                        <h4>Timeline</h4>
+                        <p>2 weeks</p>
+                        <h4>Team Members</h4>
+                        <p>Chris Swan | Jeshwanth Srinivasan </p>
+                        <h4></h4>
+                        <h4>Tools</h4>
+                        <p>Adobe Illustrator, Adobe InDesign, Rhino3D, Figma</p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </section>
+
+            <div id="methods" class="subgroup">
+                <h4>Our Approach</h4>
+                <img class="img-responsive full-img" src="./assets/img/aprh-saf.jpg" alt="">
+            </div>
+
+            <div id="my-role" class="subgroup">
+                <h4>My Contribution</h4>
+                <p>Using systems thinking frameworks, we diagramed the healthcare system and zeroed in on a manageable problem space focused on healthcare issues in Brazil. I conducted a thorough literature review. I learned that access to healthcare could
+                    be improved if they could find ways to help patients with chronic conditions self-manage them. Like most places in the world, diabetes is one of the top health issues in Brazil. We then sought to drive our solution towards making it
+                    easier for individuals to manage their care in hopes that in doing so would begin to alleviate some of the systemic burdens. We conducted interviews to understand the day-to-day monitoring of diabetes as well as with several experts
+                    on healthcare in Brazil. We then developed insights and engaged rapid prototyping of solutions.
                     <br>
-                </div>
-            </div>
-
-            <div>
-
-                <!-- Project Description -->
-                <div>
-                    <p>
-                        Meta is a tiny continuous glucose monitor aiming to help people with diabetes manage their condition. Teaming up with Motorola's strong portfolio of connected products, Meta will help people track more factors related to their condition.
-                    </p>
-                </div>
-            </div>
-
-
-            <!-- Goals -->
-            <hr>
-            <div>
-                <div>
-                    <div>
-                        <p class="section_numbers">00</p>
-                    </div>
-                    <div>
-                        <p class="sections">Overview</p>
-                    </div>
-                    <div>
-                        <p class="role">Healthcare in Brazil</p>
-                    </div>
-                    <div>
-                        <p>There are significant issues with access to healthcare in Brazil.
-                            <strong>Our solution seeks to make glucose monitoring easier for those without good access
-                                while they work to fix the system. </strong>
-                            <br>
-                            <br>
-
-                            <strong>Add stats and how we defined our product space.</strong>
-
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- What's coming up in the market -->
-            <hr>
-            <div>
-                <div>
-                    <div>
-                        <p class="section_numbers">01</p>
-                    </div>
-                    <div>
-                        <p class="sections">Research</p>
-                    </div>
-                    <div>
-                        <p class="role">Emerging Tech</p>
-                    </div>
-                </div>
-                <p>
-                    <strong>
-                        Tiny silicone sensors
-
-                        <br>
-                        <br>
-                        On phone application
-
-
-                        <br>
-                        <br>
-                        3mm jack glucometers
-
-                        <br>
-                        <br>
-                        Quantified self
-
-                    </strong>
                 </p>
             </div>
 
-            <!-- User Research-->
-            <hr>
-            <div>
-                <div>
-                    <div>
-                        <p class="section_numbers">02</p>
-                    </div>
-                    <div>
-                        <p class="sections">User Research</p>
-                    </div>
-                    <div>
-                        <p class="role">Interviews with Gustavo + Online Device Survey</p>
-                    </div>
-                </div>
-
-                <div>
-                    <p>
-                        <strong> Gustavo (add picture)</strong>
-
-                        <br>
-                        <br>
-
-                        <strong>
-                            User issues:
-                        </strong>
-
-
-
-                        <br>
-                        <br> Write some quotes here.
-
-                    </p>
-                </div>
-
-                <div>
-                    <p>
-                        <strong> Insights:
-                        </strong>
-
-                        <br>
-                        <br> Premium containers are found to be heavier and taller in design. Design has to require minimal effort in using and cleaning. Olive oil bottles are often placed on the kitchen counter, the design needs to be elegant enough
-                        to display.
-
-                        <br>
-
-                        <strong> Design requirements:
-                        </strong> Add requirements
-
-                    </p>
-                </div>
+            <div id="design-outcome" class="subgroup standby">
+                <h4>Contact for more details!</h4>
             </div>
+        </div>
 
-            <!-- Form / material-->
-            <hr>
-            <div>
-                <div>
-                    <div>
-                        <p class="section_numbers">03</p>
-                    </div>
-                    <div>
-                        <p class="sections">Form</p>
-                    </div>
-                    <div>
-                        <p class="role">Developing Look and Feel</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <p><strong>
-                            </strong>
-                        </p>
-                    </div>
-
-                </div>
+        <div class="section-divider">
+            <div class="dot1">
             </div>
-
-            <!-- Rhino models -->
-            <hr>
-            <div>
-                <div>
-                    <div>
-                        <p class="section_numbers">04</p>
-                    </div>
-                    <div>
-                        <p class="sections">Prototyping</p>
-                    </div>
-                    <div>
-                        <p class="role">Rhino</p>
-                    </div>
-                </div>
-
-
+            <div class="dot2">
             </div>
-
-
-            <!-- prototyping -->
-            <hr>
-            <div>
-                <div>
-                    <div>
-                        <p class="section_numbers">05</p>
-                    </div>
-                    <div>
-                        <p class="sections">Physical Prototype</p>
-                    </div>
-                    <div>
-                        <p class="role">3D Models: Rendering</p>
-                    </div>
-                </div>
+            <div class="dot3">
             </div>
+        </div>
 
-            <!-- App -->
-            <hr>
-            <div>
-                <div>
-                    <p class="section_numbers">08</p>
-                </div>
+    </div>
 
-                <div>
-                    <p class="sections">User Interface</p>
-                </div>
-                <div>
-                    <p class="role">Landing Screen ++</p>
-                </div>
+    <div class="container-fluid">
+        <div class="row footer-row">
+            <div class="footer col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p>
+                    <a class="hvr-underline-from-left" href="index.html">All</a> |
+                    <a class="hvr-underline-from-left" href="corsal.html">CoRSAL</a> |
+                    <a class="hvr-underline-from-left" href="meta.html">Meta App</a> |
+                    <a class="selected-footer" href="saffi.html">Saffi Foods</a> |
+                    <a class="hvr-underline-from-left" href="kbox.html">kbox</a> |
+                    <a class="hvr-underline-from-left" href="voiceinterfaces.html">Machine Voices</a> |
+                    <a class="hvr-underline-from-left" href="fake.html">Meddling Fantasy</a> |
+                    <a class="hvr-underline-from-left" href="mindfield.html">mindfield</a> |
+                    <a class="hvr-underline-from-left" href="wake.html">wake</a> |
+                    <a class="hvr-underline-from-left" href="sokoman.html">sokoman</a>
+                </p>
+                <br>
+                <br>
+                <p class="footer-text">Designed and Handcoded by <a href="./contact.html"> me</a></p>
             </div>
+            <div class="footer-icons col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p>
+                    <a href="https://www.linkedin.com/in/chrisswan51/" target="_blank"><i class="fa fa-linkedin fa-lg"
+                            aria-hidden="true"></i></a>
+                    <a href="https://medium.com/" target="_blank"><i class="fa fa-medium fa-lg"
+                            aria-hidden="true"></i></a>
+                    <a href="mailto:cswan2@id.iit.edu" target="_blank"><i class="fa fa-envelope-o fa-lg"
+                            aria-hidden="true"></i></a>
+                </p>
+                <br>
+                <p class="footer-text-small">Chris Swan © 2019 All Rights Reserved</p>
 
-            <!-- App -->
-            <hr>
-            <div>
-                <div>
-                    <p class="section_numbers">09</p>
-                </div>
 
-                <div>
-                    <p class="sections">Product System</p>
-                </div>
-                <div>
-                    <p class="role">Hero Shots</p>
-                </div>
-            </div>
-
-            <!-- Final reflections-->
-            <hr>
-            <div>
-                <div>
-                    <p class="section_numbers">10</p>
-                </div>
-                <div>
-                    <p class="sections">Reflections</p>
-                </div>
-
-                <div>
-                    <p class="role">Accessibilty in Healthcare</p>
-                    <div>
-                        <p>
-                            <strong>As healthcare hurls forward it is our duty as designers to find ways to make
-                                access
-                                more available to everyone. </strong>
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 
 
-    <br>
-    <br>
 
-    <br>
-    <br>
-
-    <!-- footer -->
-    <div style="border-bottom: 2px black solid; padding-bottom: 10px; margin: 50px;"></div>
-
-    <div class="container4" style="text-align: center;">
-        <div class="row">
-            <p class="about">web design and development by <a href="./contact.html"> me</a></p>
-        </div>
-    </div>
-
-    <!-- Optional JavaScript -->
-    <script src="./CracklePop.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
 </body>
 
 </html>

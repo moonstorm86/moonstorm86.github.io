@@ -1,13 +1,15 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script></script>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=false">
+    <title>Corsal</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
     <style>
@@ -15,399 +17,445 @@
         @import url("https://use.typekit.net/yzh8jbs.css");
         /* @import url('https://fonts.googleapis.com/css?family=Zilla+Slab'); */
     </style>
-    <link href="grid.css" rel="stylesheet">
-    <title>Christopher Swan Portfolio</title>
+
+    <!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+
+    <!-- <script src="jquery-3.4.1.min.js"></script> -->
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <!-- Stylesheet -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Vidaloka&display=swap');
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="fonts.css" /> -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/icon-tab.ico">
+
+    <script src="https://use.fontawesome.com/a891bb0a11.js"></script>
+    <script src="script.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript">
+        window.heap = window.heap || [], heap.load = function(e, t) {
+            window.heap.appid = e, window.heap.config = t = t || {};
+            var r = t.forceSSL || "https:" === document.location.protocol,
+                a = document.createElement("script");
+            a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") +
+                "//cdn.heapanalytics.com/js/heap-" + e + ".js";
+            var n = document.getElementsByTagName("script")[0];
+            n.parentNode.insertBefore(a, n);
+            for (var o = function(e) {
+                    return function() {
+                        heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                    }
+                }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify",
+                    "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"
+                ], c = 0; c < p.length; c++) heap[p[c]] = o(p[c])
+        };
+        heap.load("1409449789");
+    </script>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-light bg-light">
-        <a id="cswan" class="navbar-brand" href="index.html">Chris Swan</a>
+    <div class="spinner-wrapper">
+        <div class="p-center-wrapper">
+            <div class="la-line-scale la-dark">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <h4 id="preloader-title"></h4>
+                <h5 id="preloader-content"></h5>
+            </div>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        </div>
 
-        <div class="collapse navbar-collapse" id="navbarsExample01">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./assets/pdf/Swan_UX_August2019.pdf">resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html"><em>information</em> </a>
-                </li>
+    </div>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar-id">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsible-nav" style="margin-top: 17px;">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="cswan" href="index.html">Chris Swan</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="collapsible-nav">
+            <ul class="nav navbar-nav">
+                <li><a class="selected hvr-underline-from-left" href=""><em>projects</em></a></li>
+                <li><a class="hvr-underline-from-left" href="./assets/pdf/Swan_UX_August2019.pdf" target="_blank"><em>resume</em></a></li>
+                <li><a class="hvr-underline-from-left" href="contact.html"><em>information</em></a></li>
             </ul>
         </div>
     </nav>
+    <div class="container-fluid">
+        <div class="row" style="margin-top: 50px">
+            <nav class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+                <div class="bs-docs-sidebar">
+                    <ul class="nav nav-stacked" id="sidebar">
 
-    <!-- CoRSAL -->
+                        <li>
+                            <a href="#overview">Overview</a>
+                            <ul class="nav nav-stacked">
+                                <li><a href="#problem">Problem</a></li>
+                                <li><a href="#solution">Solution</a></li>
+                                <li><a href="#methods">Our Approach</a></li>
+                                <li><a href="#my-role">My Contribution</a></li>
+                                <li><a href="#design-outcome">Design Outcome</a></li>
+                                <!-- <li><a href="#lessons-learned">What I Learned</a></li> -->
+                            </ul>
+                        </li>
 
-    <!-- Hero Image -->
-    <div class="hero-image">
-        <div class="hero-text">
-            <!-- <h1 class="hero-title">CoRSAL endangered language archive </h1> -->
-            <h2 class="hero-projects">CoRSAL endangered language archive</h2>
-            <h2 class="hero-role">UX Research | UX Design | Wireframeing | Interactive Prototype</h2>
-            <h2 class="hero-team"> Team: Andi Zhou, Fanny Tan, Shuyi Liu, Chris Swan </h2>
-        </div>
-    </div>
-    </div>
+                        <li>
+                            <a href="#research">Research</a>
+                            <ul class="nav nav-stacked">
+                                <li><a href="#domain-research">Domain Research</a></li>
+                                <li><a href="#surveys-and-interviews">Surveys & Interviews</a></li>
+                                <li><a href="#key-takeaways">Key Takeaways</a></li>
+                            </ul>
+                        </li>
 
-    <!-- Start Container -->
-    <div class="container" style="padding-top: 25px;">
-        <div class="center">
+                        <li>
+                            <a href="#design">Design</a>
+                            <ul class="nav nav-stacked">
+                                <li><a href="#ideation">Ideation</a></li>
+                                <li><a href="#design-alt">Design Alternatives</a></li>
+                                <li><a href="#user-feedback">User Feedback & Design Implications</a></li>
+                                <li><a href="#info-arch">Information Architecture</a></li>
+                                <li><a href="#wireframes">Wireframes</a></li>
+                                <li><a href="#user-flow">User Flow</a></li>
+                                <li><a href="#final-prototype">Final Prototype</a></li>
+                                <li><a href="#design-considerations">Design Considerations</a></li>
+                            </ul>
+                        </li>
 
-            <!-- Role Description -->
-            <div>
-                <div style="padding-top: 50px;">
+                        <li>
+                            <a href="#final-prototype">Final Prototype</a>
+                            <ul class="nav nav-stacked">
+                                <!-- <li><a href="#usability">Usability Testing</a></li> -->
+                                <!-- <li><a href="#design-iterations">Design Iterations</a></li> -->
+                            </ul>
+                        </li>
 
-                    <h2 class="role">Overview</h2>
-
+                    </ul>
                 </div>
+            </nav>
 
-                <!-- Project Description -->
+            <div class="bg bg-corsal" data-aos="fade-up" data-aos-duration="600"></div>
+            <div class="jumbotron">
+            </div>
+        </div>
 
-                <div>
-                    <div>
-                        <p> CoRSAL, or the Computational Resources for South Asian Languages project, is an ongoing currently focused on archiving the Lamkang language which is spoken in a small region of northern India, has no written alphabet or orthography
-                            of any kind. It is on a list of several thousand at-risk languages that could become dormant within the next half to full century.
-                            <br>
-                            <br> Long term goals for the project include developing a model that can be applied to all languages like Lamkang with the hopes of creating a digital archive to preserve the legacy of world languages. This is especially challenging
-                            since the cause of this disappearance is in part due to the proliferation of the web itself, but also the lack of internet access in places that would require it for such purposes.
-                            <br>
-                            <br> The primary research was completed at University of North Texas (UNT). Partnered with the team from UNT we translated that research and extracted insights to craft UX design proposals to structure the archive.
+        <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+
+            <section id="overview" class="group first-section" data-aos="fade-up" data-aos-duration="600">
+                <h6> </h6><br>
+                <h3>Overview</h3>
+                <hr>
+
+                <div class="row">
+                    <div id="problem" class="subgroup-left-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <h4>Problem</h4>
+                        <p>There are approximately 7000 languages spoken on the planet, 40% of which face extinction within the next century. Language archives are the main means of language preservation in the face of diaspora. Issues that range from budget
+                            deficits to lack of user engagement to the proliferation of digital technology present challenges as well.</p>
+
+                        <h4 id="solution">Solution</h4>
+                        <p>Our project sought to create a more seamless experience for linguists, members of at-risk language communities and computational linguists to transmit, store and retrieve data collected with the hopes of preserving the rich cultural
+                            heritage embedded in the language.
+
                         </p>
                     </div>
+
+                    <div class="subgroup-right-side col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <h4>My Role</h4>
+                        <p>UX Designer, UX Researcher</p>
+                        <h4>Client</h4>
+                        <img src="./assets/img/untLogo.jpg" alt="" class="img-fluid" style="max-width: 50%; margin: 5px 0px 5px 0px;">
+                        <h4>Timeline</h4>
+                        <p>May. 2018 - Sept. 2018 </p>
+                        <h4>Team Members</h4>
+                        <p>Chris Swan, Andi Zhou, Fanny Tan, Shuyi Liu</p>
+                        <h4></h4>
+                        <h4>Tools</h4>
+                        <p>Sketch, Figma, Adobe Illustrator, Adobe InDesign</p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </section>
+
+            <div id="methods" class="subgroup">
+                <h4>Our Approach</h4>
+                <img class="img-responsive full-img" src="./assets/img/aprh-corsal.jpg" alt="">
+            </div>
+
+            <div id="my-role" class="subgroup">
+                <h4>My Contribution</h4>
+                <p>During the research phase, I reviewed the primary research done by UNT. I suggested we all look through several key documents that were provided to us from the previous team and to then come together to compare our individual feedback.
+                    I reached out to experts for interviews and set up an interview with a computational linguist. Since it was summer time, it was difficult to get in contact with many of the people we were seeking to interview. To overcome this obstacle,
+                    we reviewed interviews conducted in the primary research. In the later phase of the project, I led development of functionality and the initial wireframes. I also worked on the final prototype. I recently migrated all of our work to
+                    Figma and made a more robust interactive prototype as well.
+
+                </p>
+            </div>
+
+            <div id="design-outcome" class="subgroup">
+                <h4>Design Outcome</h4>
+            </div>
+        </div> <img class="img-responsive full-screen-img" src="./assets/img/cors-design-outcome.jpg" alt="Design Outcome"><br><br>
+        <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content ">
+            <section class="group ">
+                <div class="subgroup ">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row ">
+                        <p class="p-center-wrapper container " style="text-align: center; ">
+                            <a href="#final-prototype " class="btn black-button " type="button " name="button ">Jump to
+                                Prototype
+
+                            </a></p><br><br>
+                    </div>
                 </div>
 
-                <!-- Overview -->
+            </section>
+
+            <div class="section-divider ">
+                <div class="dot1 ">
+                </div>
+                <div class="dot2 ">
+                </div>
+                <div class="dot3 ">
+                </div>
+            </div>
+
+            <section id="research " class="group " data-aos="fade-up " data-aos-duration="600 ">
+                <h3>Research</h3>
+                <!-- <h4>What is a digtial language archive?</h4> -->
                 <hr>
-                <div>
-                    <div>
-                        <div>
-                            <p class="section_numbers">00</p>
-                        </div>
-                        <div>
-                            <p class="sections">Context</p>
-                        </div>
-                        <div>
-                            <p class="role">What is a Digital Language Archive?</p>
-                        </div>
-                    </div>
+                <div class="subgroup ">
+                    <h4>Context</h4>
                     <div>
                         <p> Online language archives provide the promise of long-term preservation of linguistic materials and facilitate access to these resources. The information stored may encompass diverse formats, like recordings, manuscripts, and field
                             notes.
                             <br>
-                            <br> These items may also contain annotations that can be complex, but only for the academic user groups. In some cases, such materials provide the only surviving record of now sleeping languages. Archival resources also document
-                            broader cultural information, including traditional knowledge. They have been around for quite a long time.
-                            <br>
-                            <br> Here are some classic archives:
+                            <br> These items may also contain annotations that can be complex, but only for the academic user groups. In some cases, such materials provide the only surviving record of dormant languages. Archival resources also document
+                            broader cultural information, including traditional knowledge.
+                        </p>
+
+                    </div>
+
+                    <div>
+                        <h4>Contextual Research</h4>
+                        <p>To better understand the problem space, we conducted the following activities:
                             <ul>
-                                <a href="https://www.amphilsoc.org/about">
-                                    <li> American Philosophical Society</li>
-                                </a>
-                                <a href="https://www.si.edu/siasc/naa">
-                                    <li> National Anthropological Archives</li>
-                                </a>
-                                <a href="http://dobes.mpi.nl/">
-                                    <li> Documentation of endangered languages (DOBES)</li>
-                                </a>
-                                <a href="http://www.perseus.tufts.edu/hopper/">
-                                    <li> Perseus 4.0, also known as the Perseus Hopper</li>
-                                </a>
-                                <a href="https://www.olacinc.org/">
-                                    <li>OLAC</li>
-                                </a>
+                                <li><span class="highlight highlight-walker ">primary research review</span></li>
+                                <li> <span class="highlight highlight-walker ">a market analysis</span> </li>
+                                <li> <span class="highlight highlight-walker ">Anxieties, Ambitions, Attitudes and
+                                        Activities framework</span> </li>
+                                <li> <span class="highlight highlight-walker "> systems mapping</span></li>
+                                <li> <span class="highlight highlight-walker "> research linguist journey map</span>
+                                </li>
+                                <li> <span class="highlight highlight-walker "> interview with a computational
+                                        linguist</span></li>.
+                            </ul>
+                        </p>
+                        <p>
+
+                            <img class="img-responsive full-img " src="./assets/img/langarchivesystemdiagram.jpg " alt="competitive analysis ">
+
+                            <img class="img-responsive full-img " src="./assets/img/4As.jpg " alt="4 A 's" style="margin-top: 30px;">
+
+                            <img class="img-responsive full-img" src="./assets/img/researchJourney.png" alt="journey map" style="margin-top: 30px;">
+
+                            <br><br>
+
+                            <p class="small-margin-bottom">Our main findings include:</p>
+                        </p>
+                        <ul>
+                            <li><span class="highlight highlight-walker">Differnt users require differnt levels
+                                    of access. </span>
+                            </li>
+                            <li>Just because someone is a linguist does not mean they have similar jobs; <span class="highlight highlight-walker">in many cases they have completely
+                                    different workflows and use cases </span>for using language archvies.</li>
+                            <li>There is no language data base designed for <span class="highlight highlight-walker">the
+                                    language communities that would most
+                                    benefit from them.</span></li>
+                            <li><span class="highlight highlight-walker">Most language archives exist for the
+                                    solely for academic purposes</span>, and they typically function a lot like university libraries.
+                            </li>
+                        </ul>
+
+                        <p class="small-margin-bottom">
+                            The results motivated us to:
+
+
+                            <ul>
+                                <li><span class="highlight highlight-walker">Focus on researchers and field
+                                        lingusits</span> since they spend the most time in the field and already use these archives more than any user group since one of the main problems was actually getting data into these platforms.
+                                </li>
+                                <li>Make a highly visual interface <span class="highlight highlight-walker">that
+                                        resolves the problems of the other archives and painpoints we
+                                        identified.</span></li>
                             </ul>
                         </p>
                     </div>
-                    <div>
-                        <div style="padding: 20px;">
-                            <p>
-                                <strong>Language Archive System Diagram</strong>
-                                <a href="./assets/img/langarchivesystemdiagram.jpg">
-                                    <img class="affect-map" src="./assets/img/langarchivesystemdiagram.jpg" alt="">
-                                </a>
-                        </div>
-                    </div>
+                    <br>
+                    <p class="p-center-wrapper container">
+                        <button data-toggle="collapse" data-target="#detailed-takeaways" class="btn black-button" name="button">More Details</button></p>
 
-                    <!-- User Groups-->
-                    <hr>
-                    <div>
-                        <div>
-                            <div>
-                                <p class="section_numbers">01</p>
-                            </div>
-                            <div>
-                                <p class="sections">Research</p>
-                            </div>
-                            <div>
-                                <p class="role">User Groups</p>
-                            </div>
-                        </div>
+                    <div class="collapse" id="detailed-takeaways">
+                        <a href="mailto:cswan2@id.iit.edu" target="_blank">
+                            <h3>More coming soon...</h3>
+                            <h3>Contact for more details!</h3>
+                        </a>
 
-                        <div>
-                            <div>
-                                <p><strong>Language Community: Lamkang Naga Tribe</strong>
-                                    <br>
-                                    <br> The Lamkang Naga Tribe from the state of Manipur in India is the oldest of the nineteen Naga tribes. They were the ones that initiated interest in archiving their language which is unusual. Typically, language
-                                    archiving begins at the behest of researchers.
-                                </p>
-                            </div>
-                            <div>
-                                <p>
-                                    <strong>Computational Linguists</strong>
-
-                                    <br>
-                                    <br> Computational lingusitics is a form of applied lingusitics that applies the techniques of computer science to language databasing, analysis, translation, and synthesis. It is a largely multi-disciplinary field
-                                    that has many goals. According to Wikipedia, it is "the scienfic study of language from a computational perspective. They are interested in providing computational models of various kinds of linguistic phenomena."
-                                </p>
-                            </div>
-                            <div>
-                                <p>
-                                    <strong>Field Linguists</strong>
-
-                                    <br>
-                                    <br> These are the people on the ground collecting data to populate the archives. They plan, organize, and conduct linguistic research, and assist others to do the same. They do independent linguistic research that
-                                    supports one or more aspects of language development programs. Typically, this involves such things as phonological, morphological, syntactic and discourse analysis, working with text collections and lexical databases,
-                                    and aspects of language documentation.
-                                </p>
-                            </div>
-                            <div>
-                                <div>
-                                    <p>
-                                        <strong>Anxieties, Ambitions, Attitudes, Activities</strong>
-                                        <div style="padding: 20px;">
-                                            <a href="./assets/img/4As.jpg">
-                                                <img class="affect-map" src="./assets/img/4As.jpg" alt="">
-                                            </a>
-
-                                        </div>
-                                    </p>
-                                </div>
-                                <div>
-                                    <p>
-                                        <strong>Insights from previous research</strong> </p>
-                                    <p>
-                                        <ul>
-                                            <li>The project aims at tackling multiple issues at once and target too many stakeholders.
-                                            </li>
-                                            <li> The first version of the concept was confusing due to opaque directions and priorities.
-                                            </li>
-                                            <li> The available information for the computational linguists, archives manager, and community members didn’t allow to fully understand their needs.
-                                            </li>
-                                        </ul>
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- User Needs -- journey maps-->
-                        <hr>
-                        <div>
-                            <div>
-                                <div>
-                                    <p class="section_numbers">02</p>
-                                </div>
-                                <div>
-                                    <p class="sections">Research</p>
-                                </div>
-                                <div>
-                                    <p class="role">User Needs</p>
-                                </div>
-                            </div>
-
-                            <div>
-                                <p>
-                                    <strong>Interview with Computational Linguist</strong></p>
-                                <p> We observed and interviewed a computational linguist to understand their methods of research, work flow and needs.</p>
-                                <div style="padding: 20px;">
-                                    <a href="./assets/img/zach.jpg">
-                                        <img class="affect-map" src="./assets/img/zach.jpg" alt="">
-                                    </a>
-
-                                </div>
-
-                            </div>
-
-                            <div style="padding-top: 30px;">
-                                <p>
-                                    <strong>Research Linguist Journey Map</strong></p>
-                                <div style="padding: 20px;">
-                                    <a href="./assets/img/researchJourney.png">
-                                        <img style="max-width: 90%" src="./assets/img/researchJourney.png" alt="">
-                                    </a>
-                                </div>
-                                <br>
-                                <br>
-                            </div>
-                            <div>
-                                <p>
-                                    <strong>Insights</strong>
-                                    <ul>
-                                        <li>Differnt users require differnt types of access.</li>
-                                        <li>Sharing work in progress can be a big challenge for linguists because they have different work styles.</li>
-                                        <li>Computational linguists will have difficulty accessing data.</li>
-                                        <li>Authenticating membership will require additional administration support (like university libraries).</li>
-                                    </ul>
-
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Solution -->
-                    <hr>
-                    <div>
-                        <div>
-                            <div>
-                                <p class="section_numbers">03</p>
-                            </div>
-                            <div>
-                                <p class="sections">Design Solution</p>
-                            </div>
-                            <div>
-                                <p class="role">Utility App for Field Linguists</p>
-                            </div>
-                        </div>
-                        <div>
-
-                            <div>
-                                <p>
-                                    Coordinating with the website team, we needed to make sure the app wasn't simply a truncated version of the website. They have altogether different use cases and make up a product system.
-                                </p>
-                            </div>
-
-                            <div>
-                                <a href="./assets/img/wireframes-mid.jpg">
-                                    <img style="max-width: 100%" src="./assets/img/wireframes-mid.jpg" alt="">
-                                </a>
-                            </div>
-
-
-                            <div style="padding-top: 40px; padding-bottom: 40px;">
-                                <div>
-                                    <p style="padding-bottom: 30px;">
-                                        The app is mainly meant to be used as a field tool and communication channel. Utilizing mesh networks, the app can be programmed to save data locally when the users are not within range of wifi or cellular channels. Once it is in range it automatically
-                                        uploads the stored local data to the cloud. We strived to make the design highly visual since the language community isn't expected to speak English with the hopes to enable more direct collaboration during field
-                                        work.
-                                    </p>
-                                </div>
-                                <a href="./assets/img/screens.jpg">
-                                    <img style="max-width: 100%" src="./assets/img/screens.jpg" alt="">
-                                </a>
-                            </div>
-
-                        </div>
-                        <div>
-                            <div>
-                                <div>
-                                    <p class="sections">First Time Access</p>
-                                    <p>First-time users can view the archive but need to wait until their approved by the administration. However, their credentials need to be verified before they can use the mobile app.</p>
-                                </div>
-                                <div>
-                                    <a href="./assets/img/screens.jpg">
-                                        <img style="padding-bottom: 30px;max-width: 100%" src="./assets/img/webimg.jpeg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="sections">Verifying emails</p>
-                                <a href="./assets/img/emailscreen.jpg">
-                                    <img style="max-width: 100%" src="./assets/img/emailscreen.jpg" alt="">
-                                </a>
-                            </div>
-                            <div>
-                                <p class="sections">Specifying User Type</p>
-                                <a href="./assets/img/typeofscreen.jpg">
-                                    <img style="max-width: 100%" src="./assets/img/typeofscreen.jpg" alt="">
-                                </a>
-                            </div>
-                            <div>
-                                <p class="sections">Credentials</p>
-                                <a href="./assets/img/credentialsscreen.jpg">
-                                    <img style="max-width: 100%" src="./assets/img/credentialsscreen.jpg" alt="">
-                                </a>
-                            </div>
-                            <div>
-                                <p class="sections">Interests</p>
-                                <a href="./assets/img/interests.jpeg">
-                                    <img style="max-width: 100%" src="./assets/img/interests.jpeg" alt="">
-                                </a>
-                            </div>
-                            <div>
-                                <p class="sections">Interaction Wireframes</p>
-                                <a href="./assets/img/wireframes1.JPG">
-
-                                    <img style="padding: 30px;height: auto; max-width: 100%;" src="./assets/img/wireframes1.JPG" alt="">
-                                </a>
-                            </div>
-                            <div>
-                                <p class="sections">Loading Screen</p>
-                                <a href="">
-
-                                    <img style="padding: 30px;height: auto; max-width: 40%;" src="./assets/img/welcomelogo.svg" alt="">
-                                </a>
-                            </div>
-
-                        </div>
-                        <!-- Solution -->
-                        <hr>
-                        <div>
-                            <div>
-                                <div>
-                                    <p class="section_numbers">04</p>
-                                </div>
-                                <div>
-                                    <p class="sections">High Fi Prototype</p>
-                                </div>
-                                <div>
-                                    <p class="role">Click for demo!</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <a href="https://www.figma.com/proto/ZtiJBdTSKkp74qQEhFXumKAH/App-ver2?node-id=0%3A81&scaling=scale-down">
-                                        <img src="./assets/img/signup.svg" alt="" style="height: auto; max-width: 100%"></a>
-                                </div>
-                                <div class="col">
-                                    <!-- <p>Click me for demo!</p> -->
-                                    <a href="https://www.figma.com/proto/ZtiJBdTSKkp74qQEhFXumKAH/App-ver2?node-id=0%3A81&scaling=scale-down">
-                                        <img src="./assets/img/landing.svg" alt="" style="height: auto; max-width: 100%"></a>
-                                </div>
-                                <div class="col"></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
+            </section>
+
+            <div class="section-divider">
+                <div class="dot1">
+                </div>
+                <div class="dot2">
+                </div>
+                <div class="dot3">
+                </div>
+            </div>
+
+            <section id="design" class="group" data-aos="fade-up" data-aos-duration="600">
+                <h3>Design</h3>
+                <hr>
+
+                <div id="ideation" class="subgroup">
+                    <h4>Information Architecture and Wireframes</h4>
+                    <p class="small-margin-bottom">Based on the evidence we collected from user research, we conducted an <span class="highlight highlight-walker">informed brainstorming
+                            session</span>. We then developed information architecture and wireframes.
+                    </p>
+
+                </div>
+            </section>
+        </div>
+        <!-- <img class="img-responsive large-img" src="./assets/img/" style="max-width: 25%; margin-left: 220px; margin-bottom: 40px;" alt="archivist flow" data-aos="fade-up" data-aos-duration="600"> -->
+        <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+            <section class="group">
+                <div class="subgroup">
+                    <p>Eventually, we narrowed our ideas down to the following four large themes that address our users’ concerns from different perspectives. <span class="highlight highlight-walker">Coordinating
+                            with
+                            the website team, we needed to make
+                            sure the app wasn't simply a truncated version of the website. They have altogether
+                            different use cases and make up a product system.</span></p>
+
+                    <img class="img-reponsive full-img" src="./assets/img/cors-wires.jpg" alt="sketches" style="max-width: 60%;">
+                    <br><br>
+                    <img class="img-reponsive full-img" src="./assets/img/cors-wires2.jpg" alt="sketches">
+                </div>
+            </section>
+        </div>
+        <br>
+
+        <!-- <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+            <section class="group">
+                <div id="info-arch" class="subgroup">
+                    <h4>User Flow and Interaction</h4>
+                    <br>
+                    <img class="img-responsive full-img" src="./assets/img/wireframes1.JPG" alt="figma user flow" style="max-width: 60%;">
+                    <br><br>
+                </div>
+            </section>
+        </div> -->
+
+        <div class="section-divider">
+            <div class="dot1">
+            </div>
+            <div class="dot2">
+            </div>
+            <div class="dot3">
+            </div>
+        </div>
+
+        <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered main-content">
+            <section class="group">
+                <h3>Final Prototype</h3>
+                <div id="final-prototype" class="subgroup">
+                    <hr>
+                </div>
+                <div>
+                    <p class="p-center-wrapper">
+                        <a href="https://www.figma.com/proto/ZtiJBdTSKkp74qQEhFXumKAH/App-ver2?node-id=0%3A81&scaling=scale-down">
+                            <img src="./assets/img/signup.svg" alt="" style=" max-width: 50%"></a>
+                    </p>
+                </div>
+
+                <div style="margin-top: 50px;">
+                    <p class="p-center-wrapper">
+                        <a href="https://www.figma.com/proto/ZtiJBdTSKkp74qQEhFXumKAH/App-ver2?node-id=0%3A81&scaling=scale-down">
+                            <img src="./assets/img/landing.svg" alt="" style=" max-width: 50%"></a>
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <div class="section-divider">
+            <div class="dot1">
+            </div>
+            <div class="dot2">
+            </div>
+            <div class="dot3">
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row footer-row">
+            <div class="footer col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p>
+                    <a class="hvr-underline-from-left" href="index.html">All</a> |
+                    <a class="hvr-underline-from-left" href="corsal.html">CoRSAL</a> |
+                    <a class="hvr-underline-from-left" href="meta.html">Meta App</a> |
+                    <a class="selected-footer" href="saffi.html">Saffi Foods</a> |
+                    <a class="hvr-underline-from-left" href="kbox.html">kbox</a> |
+                    <a class="hvr-underline-from-left" href="voiceinterfaces.html">Machine Voices</a> |
+                    <a class="hvr-underline-from-left" href="fake.html">Meddling Fantasy</a> |
+                    <a class="hvr-underline-from-left" href="mindfield.html">mindfield</a> |
+                    <a class="hvr-underline-from-left" href="wake.html">wake</a> |
+                    <a class="hvr-underline-from-left" href="sokoman.html">sokoman</a>
+                </p>
+                <br>
+                <br>
+                <p class="footer-text">Designed and Handcoded by<a href="./contact.html"> me</a></p>
+            </div>
+            <div class="footer-icons col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p>
+                    <a href="https://www.linkedin.com/in/chrisswan51/" target="_blank"><i class="fa fa-linkedin fa-lg"
+                            aria-hidden="true"></i></a>
+                    <a href="https://medium.com/" target="_blank"><i class="fa fa-medium fa-lg"
+                            aria-hidden="true"></i></a>
+                    <a href="mailto:cswan2@id.iit.edu" target="_blank"><i class="fa fa-envelope-o fa-lg"
+                            aria-hidden="true"></i></a>
+                </p>
+                <br>
+                <p class="footer-text-small">Chris Swan © 2019 All Rights Reserved</p>
+
+
             </div>
         </div>
     </div>
 
-    <br>
-    <br>
 
-    <!-- footer -->
-    <div>
-        <div style="border-bottom: 2px black solid; padding-bottom: 10px;     margin: 50px;"></div>
 
-        <div class="container4" style="text-align: center;">
-            <div class="row">
-                <p class="about">web design and development by <a href="./contact.html"> me</a></p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
 </body>
 
 </html>
