@@ -51,10 +51,6 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
 
-        // var scrolled = $(window).scrollTop();
-        // console.log("Scrolled: "+scrolled);
-        // $('.bg').css('height', (jumboHeight-scrolled) + 'px');
-
         $(".scroll-disappear").css("opacity", 1 - $(window).scrollTop() / 500);
         $(".arrow").css("opacity", 1 - $(window).scrollTop() / 20);
 
@@ -84,13 +80,7 @@ $(document).ready(function() {
         offset: 160
     });
 
-    // $("img[class*=\"img-responsive\"]").each(function(index,element) {
-    //   console.log($(element).attr('class'));
-    //   if ($(element).attr('class')!= 'img-responsive full-screen-img') {
-    //     $(element).attr("data-action","zoom");
-    //   }
-    // });
-
+    localStorage
     $('#template-to-top').hide();
     $(".bs-docs-sidebar").hide();
 
