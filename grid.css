@@ -132,6 +132,10 @@ pre {
     .mv {
         max-width: 75%;
     }
+    .mindfield {
+        margin-top: 75px;
+        margin-right: 10px;
+    }
 }
 
 #work {

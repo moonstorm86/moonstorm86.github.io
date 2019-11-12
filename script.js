@@ -9,7 +9,7 @@ $(document).ready(function() {
         "I am learning how to use analog synthesizers to make drone music.",
         "I'm a love horror movies.",
         "I lived in Nepal for four months.",
-        "I lived in Europe for three years",
+        "I lived in Europe for three years.",
         "I hiked to Mt. Everest Base Camp.",
         "I hitchhiked in Morocco, Czech Republic and Upstate New York.",
         "I was detained at the border of Turkey and Bulgaria on suspicion of having a stolen passport. It was my passport; I was just very tan.",
