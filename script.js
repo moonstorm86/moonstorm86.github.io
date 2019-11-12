@@ -2,30 +2,23 @@ $(document).ready(function() {
 
     const mq = window.matchMedia("(min-width: 991px)");
     const funFacts = [
-        "I have an insatiable desire to learn new things.",
-        "I am an excellent cook.",
+        "I love to cook.",
         "I built a mini bike out of a lawn mower engine when I was 12.",
         "I love hacking IOT products.",
-        "I love abstract thinking.",
         "I love techno.",
         "I am learning how to use analog synthesizers to make drone music.",
-        "I'm a huge fan of horror movies.",
+        "I'm a love horror movies.",
         "I lived in Nepal for four months.",
         "I lived in Europe for three years",
         "I hiked to Mt. Everest Base Camp.",
         "I hitchhiked in Morocco, Czech Republic and Upstate New York.",
-        "I was detained at the border of Turkey and Bulgaria on suspicion of having a stolen passport.",
-        "I am interested in Buddhism.",
+        "I was detained at the border of Turkey and Bulgaria on suspicion of having a stolen passport. It was my passport; I was just very tan.",
         "I practice yoga 4-6 days a week."
     ];
 
     var randomFactIndex = Math.floor(Math.random() * funFacts.length);
     $('#preloader-title').text("Chris's Fun Fact #" + (randomFactIndex + 1));
     $('#preloader-content').html(funFacts[randomFactIndex]);
-
-    // $('#template-to-top').setAttribute("data-aos","fade-up");
-    // $('#template-to-top').setAttribute("data-aos-duration","600");
-
 
     $(window).on("load", function() {
         preloaderFadeOutTime = 500;
@@ -72,9 +65,6 @@ $(document).ready(function() {
         });
     });
 
-
-
-
     $('body').scrollspy({
         target: '.bs-docs-sidebar',
         offset: 160
@@ -90,19 +80,12 @@ $(document).ready(function() {
         return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
     }
 
-
     var allLargeImgs = document.getElementsByClassName('full-screen-img');
 
     //Check to see if the window is top if not then display button
     $(window).scroll(function() {
         if ($(this).scrollTop() > 200) {
             $('#template-to-top').fadeIn();
-            // $('#template-to-top').attr("data-aos","fade-up");
-            // $('#template-to-top').attr("data-aos-duration","600");
-
-
-
-            // data-aos="fade-up" data-aos-duration="600"
         } else {
             $('#template-to-top').fadeOut();
         }
@@ -127,30 +110,8 @@ $(document).ready(function() {
             $(".bs-docs-sidebar").fadeOut("slow");
         }
 
-        // if (checkVisible(testPic)) {
-        //   $(".bs-docs-sidebar").fadeOut("slow");
-        // } else {
-        //   $(".bs-docs-sidebar").fadeIn('slow');
-        // }
 
-
-        // if (mq.matches) {
-        //   if (window.location.pathname === '/html/home.html'){
-        //     console.log('yes');
-        //     if ($(this).scrollTop() > ($(window).height()*0.87-65)) {
-        //       $('.navbar-nav-white').removeClass('navbar-nav-white');
-        //       $('.navbar-brand-white').removeClass('navbar-brand-white');
-        //       $('.hvr-underline-from-left-white').removeClass('hvr-underline-from-left-white');
-        //     } else {
-        //       $('.navbar-nav').addClass('navbar-nav-white');
-        //       $('.navbar-brand').addClass('navbar-brand-white');
-        //       $('.hvr-underline-from-left').addClass('hvr-underline-from-left-white');
-        //     }
-        //   }
-        // }
     });
-
-
 
     $('a[href^="#"]').on('click', function(e) {
         e.preventDefault();
@@ -175,7 +136,6 @@ $(document).ready(function() {
 
     // $('.').addClass('load');
 
-
     $(".p-center-wrapper button[data-toggle='collapse']").click(function() {
         $(this).text(function(i, old) {
             var newString = "";
@@ -191,11 +151,8 @@ $(document).ready(function() {
     })
 });
 
-
-
 $.fn.isOnScreenHighlight = function() {
 
-    // var fix = parseInt($(".navbar").css("height"));
     var win = $(window);
 
     var viewport = {
