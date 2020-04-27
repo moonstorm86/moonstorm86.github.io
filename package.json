@@ -1,0 +1,37 @@
+{
+    "name": "p.0",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "webpack --watch --mode development",
+        "prod": "webpack --mode production"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.9.0",
+        "@babel/preset-env": "^7.9.5",
+        "browser-sync": "^2.26.7",
+        "del": "^5.1.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-babel": "^8.0.0",
+        "gulp-cli": "^2.2.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-image": "^6.1.0",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-plumber": "^1.2.1",
+        "gulp-postcss": "^8.0.0",
+        "gulp-pug": "^4.0.1",
+        "gulp-sass": "^4.0.2",
+        "html-loader": "^1.1.0",
+        "html-webpack-plugin": "^4.2.0",
+        "node-sass": "^4.13.1",
+        "pug": "^2.0.4",
+        "pug-html-loader": "^1.1.5",
+        "webpack": "^4.42.1",
+        "webpack-cli": "^3.3.11"
+    }
+}
