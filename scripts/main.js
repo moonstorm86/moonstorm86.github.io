@@ -53,13 +53,13 @@ if (current.pagetype == "index") {
 }
 
 // var t = 0,
-words = ['designer 🧭',
-    'developer 💻',
-    'researcher 🔍',
-    'home&nbsp;chef 🔪',
-    'yogi 🧘🏻‍♂️',
-    'cat dad 🐈',
-    'cyclist 🚲'
+words = ['designer&nbsp;🧭',
+    'developer&nbsp;💻',
+    'researcher&nbsp;🔍',
+    'home&nbsp;chef&nbsp;🔪',
+    'yogi&nbsp;🧘🏻‍♂️',
+    'cat&nbsp;dad&nbsp;🐈',
+    'cyclist&nbsp;🚲'
 ];
 
 function rand_range(maximum) {
