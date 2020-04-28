@@ -1,5 +1,4 @@
 // import style from "../styles/main.css"
-// import style from "../styles/main.css"
 // import createSlideshow from "./slideshow.js"
 
 /*
@@ -31,7 +30,7 @@ if (current.pagetype == "index") {
     document.querySelector('#getintouch')
         .addEventListener("click", (e) => {
             let contact = document.querySelector('#contact')
-            let scrollTarget = contact.offsetTop + contact.offsetHeight + 120 - window.innerHeight
+            let scrollTarget = contact.offsetTop + contact.offsetHeight + 115 - window.innerHeight
             let duration = Math.floor(scrollTarget / 5)
 
             e.preventDefault()
@@ -51,6 +50,39 @@ if (current.pagetype == "index") {
         })
     })
 
+}
+
+// var t = 0,
+words = ['designer 🧭',
+    'developer 💻',
+    'researcher 🔍',
+    'home&nbsp;chef 🔪',
+    'yogi 🧘🏻‍♂️',
+    'cat dad 🐈',
+    'cyclist 🚲'
+];
+
+function rand_range(maximum) {
+    "use strict";
+    return Math.floor(Math.random() * (maximum + 1));
+}
+
+function choose(array) {
+    "use strict";
+    return array[rand_range(array.length - 1)];
+}
+
+function litany() {
+    "use strict";
+    var last, text, main = document.getElementById('addText'),
+        selection = choose(words);
+    addText.innerHTML = '<span style="color: #' + selection + '">' + selection + '</span>';
+}
+
+function produce_litany() {
+    "use strict";
+    litany();
+    setInterval(litany, 750);
 }
 
 function getBackY() {
