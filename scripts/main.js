@@ -25,6 +25,7 @@ function scrollToSmooth(targetY, duration) {
     }
     window.requestAnimationFrame(step)
 }
+
 var current = document.querySelector('body').dataset
 if (current.pagetype == "index") {
     document.querySelector('#getintouch')
