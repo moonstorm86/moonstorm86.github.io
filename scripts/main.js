@@ -101,7 +101,6 @@ function getBackX() {
     return (xOffset > 0) ? xOffset : 0
 }
 
-
 if (current.pagetype == "project" || current.pagetype == "meta") {
     let backButton = document.querySelector("#back")
 
@@ -115,6 +114,34 @@ if (current.pagetype == "project" || current.pagetype == "meta") {
     backButton.style.top = getBackY() + "px"
     backButton.style.left = getBackX() + "px"
 
+    createSlideshow = () => {
+        let slideshows = document.querySelectorAll(".slideshow")
+        if (slideshows.length) {
+            slideshows.forEach(slideshow => {
+                let slideCount = slideshow.querySelector(".slides").children.length
+                let counter = slideshow.querySelector(".currentSlide")
+
+                slideshow.querySelector('.control-next')
+                    .addEventListener('click', e => {
+                        let slide = Number(slideshow.dataset.slide)
+                        let nextSlide = (slide === slideCount) ? 1 : slide + 1
+
+                        slideshow.dataset.slide = nextSlide
+                        counter.innerText = nextSlide
+                    })
+
+                slideshow.querySelector('.control-prev')
+                    .addEventListener('click', e => {
+                        let slide = Number(slideshow.dataset.slide)
+                        let nextSlide = (slide === 1) ? slideCount : slide - 1
+
+                        slideshow.dataset.slide = nextSlide
+                        counter.innerText = nextSlide
+                    })
+            })
+        }
+    }
+
     createSlideshow()
 
     let circles = document.querySelectorAll('.circles circle')
@@ -123,7 +150,6 @@ if (current.pagetype == "project" || current.pagetype == "meta") {
         setInterval(() => scaleCircles(circles), 2000);
     }
 }
-
 
 // ast
 function scaleCircles(circles) {

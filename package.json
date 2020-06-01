@@ -2,7 +2,7 @@
     "name": "p.0",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "",
     "scripts": {
         "dev": "webpack --watch --mode development",
         "prod": "webpack --mode production"
@@ -20,6 +20,7 @@
         "gulp-babel": "^8.0.0",
         "gulp-cli": "^2.2.0",
         "gulp-concat": "^2.6.1",
+        "gulp-font": "^1.0.4",
         "gulp-image": "^6.1.0",
         "gulp-imagemin": "^7.1.0",
         "gulp-plumber": "^1.2.1",
@@ -31,6 +32,7 @@
         "node-sass": "^4.13.1",
         "pug": "^2.0.4",
         "pug-html-loader": "^1.1.5",
+        "ttf2eot": "^2.0.0",
         "webpack": "^4.42.1",
         "webpack-cli": "^3.3.11"
     }

@@ -14,6 +14,7 @@ const pug = require('gulp-pug');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('gulp-autoprefixer');
 const babel = require('gulp-babel');
+// const gulpFont = require('gulp-font');
 // const plumber = require('gulp-plumber');
 // const webpack = require('webpack')
 // const webpackConfig = require('./webpack.config.js')
@@ -22,20 +23,22 @@ const babel = require('gulp-babel');
 
 const origin = 'src';
 const destination = 'build';
-// const dist = 'dist1';
+const projects = 'build/projects';
 
 sass.compiler = require('node-sass');
 
 async function clean(cb) {
     await del(destination);
+    // await del([destination, '!destination/images']);
     cb();
 }
 
 function html(cb) {
-    src(`${origin}/**/*.html`).pipe(dest(destination))
-        // .pipe(plumber());
+    src(`${origin}/**/*.html`)
+        .pipe(dest(destination));
     cb();
 }
+
 // pug to HTML -- Works!
 function template(cb) {
     src(`${origin}/**/*.pug`)
@@ -43,73 +46,31 @@ function template(cb) {
             pretty: true
         }))
         .pipe(dest(destination));
+    // .pipe(browserSync.stream);
+
     cb();
 };
-
-// gulp.task('imageSm', function() {
-//     gulp.src('img/**/*')
-//         .pipe(cache(imagemin({
-//             optimizationLevel: 3,
-//             progressive: true,
-//             interlaced: true
-//         })))
-//         .pipe(gulp.dest('build/img/'));
-// });
 
 function images(cb) {
     src(`${origin}/images/*`)
         .pipe(image())
         .pipe(dest(`${destination}/images`));
-    src(`${origin}/**/*.ico`)
+    src(`${origin}/*.ico`)
         .pipe(image())
         .pipe(dest(`${destination}`));
     cb();
 }
 
-// function assets(cb) {
-//     return new Promise((resolve, reject) => {
-//         webpack(webpackConfig, (err, stats) => {
-//             if (err) {
-//                 return reject(err)
-//             }
-//             if (stats.hasErrors()) {
-//                 return reject(new Error(stats.compilation.errors.join('\n')))
-//             }
-//             resolve()
-//         })
-//     })
-// }
-
 function css(cb) {
-    // src([`${origin}/styles/main.css`]).pipe(dest(`${destination}/styles`));
-
     src(`${origin}/styles/**/*.css`)
-        // .pipe(sass().on('error', sass.logError))
-        // .pipe(postcss([autoprefixer]))
         .pipe(sass({
             outputStyle: 'expanded'
         }))
         .pipe(dest(`${destination}/styles`));
+    // .pipe(browserSync.stream);
 
     cb();
 }
-
-// function sassStyles(cb) {
-//     src(`${origin}/styles/**/*.sass`)
-//         .pipe(sass())
-//         .pipe(autoprefixer({
-//             overrideBrowserslist: ['last 3 versions'],
-//             cascade: false
-//         }))
-//         .pipe(sass({
-//             outputStyle: 'expanded'
-//         }))
-//         .pipe(dest(`${destination}/styles`))
-
-//         .pipe(dest(`${destination}/styles/main.sass`))
-
-//     cb();
-// }
 
 function js(cb) {
     // any js file
@@ -117,16 +78,18 @@ function js(cb) {
 
     // specific js file
     src(`${origin}/scripts/main.js`).pipe(dest(`${destination}/scripts`));
-    // .pipe(babel({
-    //     presets: ['@babel/env']
-    // }))
+    // .pipe(browserSync.stream);
+
     cb();
 }
 
 function watcher(cb) {
     watch(`${origin}/**/*.html`).on('change', series(html, browserSync.reload))
+        // watch(`${origin}/images/*`).on('change', series(images, browserSync.reload))
+        // watch(`${origin}/images/**/*.{png,jpg,jpeg,gif,svg}, {events: 'all'}`).on('change', series(images, browserSync.reload))
+        // watch(`${destination}/**/*.html`).on('change', series(html, browserSync.reload))
     watch(`${origin}/**/*.css`).on('change', series(css, browserSync.reload))
-        // watch(`${origin}/**/*.sass`).on('change', series(sassStyles, browserSync.reload))
+    watch(`${origin}/**/*.css`).on('add', series(css, browserSync.reload))
     watch(`${origin}/**/*.pug`).on('change', series(template, browserSync.reload))
     watch(`${origin}/**/*.js`).on('change', series(js, browserSync.reload))
     cb();
@@ -136,11 +99,14 @@ function server(cb) {
     browserSync.init({
         notify: false,
         open: true,
-        server: {
-            baseDir: destination,
-        }
+        server: [destination, projects]
+            // server: {
+            //     baseDir: destination,
+            // }
     })
     cb();
 }
 
+// exports.default = series(clean, parallel(template, html, css, js), server, watcher);
+// uncomment to add new images
 exports.default = series(clean, parallel(template, html, css, js, images), server, watcher);
