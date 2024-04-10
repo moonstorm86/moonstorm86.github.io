@@ -55,10 +55,10 @@ if (current.pagetype == "index") {
 
 // var t = 0,
 words = ['designer&nbsp;🧭',
-    'developer&nbsp;💻',
+    // 'designer&nbsp;💻',
     'researcher&nbsp;🔍',
     'home&nbsp;chef&nbsp;🔪',
-    'yogi&nbsp;🧘🏻‍♂️',
+    // 'yogi&nbsp;🧘🏻‍♂️',
     'cat&nbsp;dad&nbsp;🐈',
     'cyclist&nbsp;🚲'
 ];
